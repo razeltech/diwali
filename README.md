@@ -33,58 +33,74 @@ The interactive arsenal provides authentic representations of traditional Indian
 
 | Instrument | Class | Mechanics & Visual Character |
 |---|---|---|
-| **Phuljhari** | Ignitor / Sparkler | Handheld sparkler emitting continuous micro-sparks with dynamic light propagation. Acts as the primary lighting torch for all fuses. |
+| **Phuljhari** | Ignitor / Sparkler | Handheld sparkler emitting continuous micro-sparks with dynamic light propagation and velocity wake trails. Primary torch for all fuses. |
 | **Mitti Diya** | Traditional Lamp | Terracotta oil lamp with realistic fluid flame convection, teardrop combustion core, and ambient courtyard warmth. |
 | **Chakri** | Ground Spinner | High-rpm ground-spinning disc generating tangential centrifugal spark spirals and ground scorch glow. |
+| **Surya Chakra** | Giant Solar Spinner | Dual-ring solar wheel with radial solar teeth, undergoing high-RPM progressive acceleration into an expansive 360° blinding golden corona. |
 | **Anaar** | Spark Fountain | Conical earthenware fountain erupting vertical cascades of golden and polychromatic incandescent embers. |
-| **Sutli Bomb** | Concussive Charge | High-amplitude acoustic shockwave accompanied by physical screen shake, bright flash, and reverberant courtyard decay. |
+| **Colour Fountain** | Multi-Stage Flowerpot | Ornamental tiered cone erupting randomized 3-stage chromatic plumes (Saffron, Peacock Cyan, Emerald, Violet, Rose Ruby) with crackling finale. |
+| **Butterfly** | Aerodynamic Patanga | Winged ground cracker that lifts off on ignition, fluttering in an oscillating sinusoidal ascent with twin cyan/emerald wing trails and an apex star break. |
+| **Sutli Bomb** | Concussive Charge | Instant paper-tearing crack and physical screen shake followed by rolling courtyard street echo and red twine shrapnel. |
+| **Sky Mine** | Ground Mortar | Heavy cast canister detonating a concussive ground charge that propels an upward fan of 38 incandescent comet pearls with brocade tails. |
 | **Rocket** | Ballistic Aerial | Accelerating propellant ascent with smoke trail lighting, detonating at peak altitude into algorithmic sky breaks. |
-| **100 Wala** | Linear Garland | Sequential linear cracker chain with precise staccato cadence (*tak-tak-tak-tak*) and rapid directional combustion. |
-| **1000 Wala** | High-Speed Garland | Extended straight cracker strand delivering a continuous machine-gun acoustic rhythm and dense spark trail. |
+| **100 Wala** | Linear Garland | Sequential hanging twine chain with authentic staccato cadence (*pat-pat-pat*) and realistic individual cracker delay spacing. |
+| **1000 Wala** | High-Speed Garland | Extended straight cracker strand delivering rapid staccato rhythms and dense paper confetti showers. |
 | **5000 Wala** | Spiral Barrage | Coiled cylindrical roll combusting along an inward spiral path, building into a dense acoustic roar. |
 | **10,000 Wala** | Grand Finale Ladi | Massive coiled ceremonial roll with sustained rhythmic thunder, concluding with an explosive bomb head. |
-| **12 / 30 / 60 Shots** | Aerial Batteries | Automated multi-tube repeaters launching timed vertical volleys, lateral fan sweeps, and multi-break grand finales. |
+| **12 / 30 / 60 Shots** | Aerial Batteries | Automated multi-tube repeaters launching timed vertical volleys, lateral fan sweeps, multi-lingual wishes, and multi-break grand finales. |
 
 ---
 
 ## Sky Break Formations
 
-Rockets and aerial battery shells randomly select from 13 distinct procedural pyrotechnic break patterns:
+Rockets and aerial battery shells randomly select from 20 procedural pyrotechnic break patterns:
 
-- **Navratna Crackle**: Multi-hued gemstone spheres transitioning into loud micro-burst crackling clouds.
-- **Heart**: Symmetrical cardiac contour composed of crimson and rose incandescent embers.
-- **Satrangi Rings**: Concentric seven-color orbital rings expanding outward in synchronized harmony.
-- **Crossette**: Primary shells that fracture into four symmetrical darts, subdividing repeatedly.
-- **Golden Willow**: Long-burning golden charcoal streamers weeping toward the ground in heavy arcs.
-- **Ganga-Jamuna**: Dual-tone cascading rivers of saffron and azure stars.
-- **Kundan Palm**: Thick rising palm trunks opening into heavy metallic gold tendrils with coconut crackle tips.
-- **Double Break**: Timed two-stage detonation creating an inner pastel sphere enclosed by an expansive outer ring.
-- **Diwali Chakra**: Rotating aerial burst emitting directional spark spokes along a circular perimeter.
-- **Saturn Ring**: Spherical planetary core surrounded by an angled elliptical particle ring.
-- **Spider Comets**: Fast-traveling, thick golden streamers tracing long radial tentacles across the sky.
-- **Silver Glitter**: Bright white magnesium strobe sparkles that hang suspended before gradual dissipation.
-- **Chit-Chit Storm**: Dense acoustic barrage of rapid-fire micro-sparklers bursting in rapid succession.
+1. **Navratna Crackle**: Multi-hued gemstone spheres transitioning into loud micro-burst crackling clouds.
+2. **Heart**: Symmetrical cardiac contour composed of crimson and rose incandescent embers.
+3. **Satrangi Rings**: Concentric seven-color orbital rings expanding outward in synchronized harmony.
+4. **Crossette**: Primary shells that fracture into four symmetrical darts, subdividing repeatedly.
+5. **Golden Willow**: Long-burning golden charcoal streamers weeping toward the ground in heavy arcs.
+6. **Ganga-Jamuna**: Dual-tone cascading rivers of saffron and azure stars.
+7. **Kundan Palm**: Thick rising palm trunks opening into heavy metallic gold tendrils with coconut crackle tips.
+8. **Double Break**: Timed two-stage detonation creating an inner pastel sphere enclosed by an expansive outer ring.
+9. **Diwali Chakra**: Rotating aerial burst emitting directional spark spokes along a circular perimeter.
+10. **Saturn Ring**: Spherical planetary core surrounded by an angled elliptical particle ring.
+11. **Spider Comets**: Fast-traveling, thick golden streamers tracing long radial tentacles across the sky.
+12. **Silver Glitter**: Bright white magnesium strobe sparkles that hang suspended before gradual dissipation.
+13. **Chit-Chit Storm**: Dense acoustic barrage of rapid-fire micro-sparklers bursting in rapid succession.
+14. **Mayur Pankh**: Majestic peacock feather fan radiating emerald green, royal blue, and turquoise comets.
+15. **Golden Rain**: Dense cascading deluge of heavy golden weeping pearls showering down across the night sky.
+16. **Strobe Dahlia**: Diamond-white pulsing strobe florets surrounding a rich ruby combustion core.
+17. **Chrysanthemum Crackle**: Massive spherical bloom shattering into hundreds of crackling silver tips.
+18. **Crown Brocade**: Grand imperial gold weeping canopy with rich emerald floral pistils.
+19. **Satrangi Kaleidoscope**: Multi-ring concentric polychromatic counter-rotating shockwaves.
+20. **Calligraphic Sky Wishes**: Particle letterforms spelling out festive blessings across the sky, cycling across three languages:
+    - **English**: `Happy Diwali` & `Happy Deepavali`
+    - **Hindi (Devanagari)**: `शुभ दीपावली` & `दीपावली की शुभकामनाएं`
+    - **Telugu**: `దీపావళి శుభాకాంక్షలు` & `శుభ దీపావళి`
 
 ---
 
 ## Dual Celebration Modes
 
 ### 1. Courtyard Mode
-The complete interactive festive environment. Place multiple diyas, ignite spinning chakris, arrange cascading anaars, or orchestrate sky-filling fireworks displays with full spatial particle physics and lighting.
+The complete interactive festive environment. Place multiple diyas, ignite spinning chakris, arrange cascading anaars, or orchestrate sky-filling fireworks displays with dynamic point-light emissive illumination, real-time Phuljhari trails, and interactive context guidance hints.
 
 ### 2. Pooja Diya Mode
-A minimalist, meditative mode centering on a large ceremonial brass lamp. Strips away all cracker controls to provide a serene, contemplative flame simulation with natural flicker acoustics and room illumination. Ideal for pooja displays, ambient monitors, and devotional backgrounds.
+A minimalist, meditative sanctum centering on a large ceremonial brass lamp:
+- **Floating Fresh Flowers**: Authentic orange marigold (`गेंदा`) and white jasmine (`चमेली`) petals bobbing along natural orbital currents in the sacred water/oil reservoir.
+- **Sacred Agarbatti**: Handcrafted brass incense stand with a glowing red ember tip releasing delicate curls of rising smoke that waft with fluid air draft equations.
+- **Harmonic Temple Bell**: Five tuned bronze bell harmonics (`1180Hz`, `1870Hz`, `2850Hz`, `3720Hz`, `4980Hz`) delivering a serene 3.6-second singing ring-out.
+- **Interactive Aarti Gesture**: Swirling touch or cursor movement around the flame releases golden prana motes and sways the flame devotionally.
 
 ---
 
-## Operating Instructions
+## Dark-Room Comfort & Illumination
 
-1. **Selection**: Click or tap an instrument from the bottom brass navigation bar. Scroll or drag horizontally across the dock to view the full collection.
-2. **Placement**: Click or tap anywhere across the courtyard ground to position the selected instrument.
-3. **Ignition**: Select the Phuljhari tool or drag the sparkler near the instrument's fuse until ignition occurs.
-4. **Sound Control**: Toggle synthesized audio via the top-right speaker control.
-5. **Courtyard Reset**: Clear active ground instruments using the circular reset button. In Pooja mode, this extinguishes the lamp for re-lighting.
-6. **Dark-Room Optimization**: Display controls automatically fade into transparency when idle to preserve room immersion. Move the cursor or touch the display to restore controls.
+- **Dynamic Scene Lighting**: Emissive point lights illuminate the courtyard ground tiles, horizon, and background architecture in real time from every active Diya, Fountain, Spinner, Ladi flash, and Aerial shell burst.
+- **Screen Wake Lock**: Automatically requests continuous screen wake lock to prevent mobile and desktop displays from sleeping during festive showcases.
+- **Idle UI Auto-Dimming**: Controls softly fade into transparency after inactivity, ensuring zero screen distraction in dark rooms.
+- **Onboarding Guidance Pill**: Non-intrusive floating hint bar providing instant context on how to place, drag, reposition, and ignite crackers.
 
 ---
 
@@ -92,23 +108,26 @@ A minimalist, meditative mode centering on a large ceremonial brass lamp. Strips
 
 ```
 e-diwali/
-├── index.html        # Unified application runtime (Canvas, Web Audio, UI)
-├── banner.svg        # Vector showcase banner for repository and previews
-├── robots.txt        # Search engine crawler instructions
-├── sitemap.xml       # Canonical XML sitemap for SEO discovery
-├── .nojekyll         # GitHub Pages Jekyll bypass flag
-├── README.md         # Primary documentation (Razeltech)
-└── README.r2dapps.md # Mirror documentation (R2D Apps)
+├── index.html              # Unified application runtime (Canvas, Web Audio, UI)
+├── banner.svg              # Vector showcase banner for repository and previews
+├── favicon.svg             # Vector Diya emblem icon
+├── Animated_favicon.svg    # SMIL-animated pulsing flame tab favicon
+├── manifest.json           # Web App Manifest for standalone PWA installation
+├── sw.js                   # Offline caching service worker
+├── robots.txt              # Search engine crawler instructions
+├── sitemap.xml             # Canonical XML sitemap for SEO discovery
+├── .nojekyll               # GitHub Pages Jekyll bypass flag
+├── README.md               # Primary documentation (Razeltech)
+└── README.r2dapps.md       # Mirror documentation (R2D Apps)
 ```
 
 - **Canvas Rendering Engine**: Custom 60 FPS particle simulator handling gravity vectors, drag coefficients, spark lifetimes, smoke-free glow diffusion, and additive compositing (`globalCompositeOperation = 'lighter'`).
-- **Procedural Web Audio API**: Complete sound synthesis pipeline without sampled audio clips:
-  - Fuse burn: Pink noise passed through a dynamic bandpass filter with frequency jitter.
-  - Explosions & Bombs: Low-frequency sine sweeps blended with shaped white noise bursts, routed through biquad lowpass filters and subtle waveshaper saturation.
-  - Ladi firecrackers: High-Q bandpass filtered noise bursts modulated with rapid logarithmic gain envelopes.
-  - Rocket motors: Resonant low-pass sweeps with pitch modulation matching ballistic climb velocity.
-- **Zero External Runtime Dependencies**: Single self-contained HTML page loading Tailwind CSS and Google Fonts via CDN.
-- **Screen Wake Lock**: Incorporates the Screen Wake Lock API to prevent mobile and desktop displays from dimming or sleeping during celebrations.
+- **Procedural Web Audio API (Zero Synthetic Sine Drums)**:
+  - **Flash-Powder Aerial Shell Break (`playBurstBoom` / `playExplosion`)**: Instant supersonic highpass snap (1700Hz &rarr; 600Hz in 25ms) + concussive resonant bandpass shock front (200Hz &rarr; 75Hz) + diffuse 1.2s rolling sky thunder.
+  - **Garland Ladi Strings (`playCrackerTrain`)**: Realistic staccato cadence with organic cracker-to-cracker micro-delays (0.045s - 0.085s) and crisp cardboard casing breaks.
+  - **Mortar Gas Expansion (`playTubeThump`)**: Muffled launch tube puff through a 210Hz bandpass filter.
+  - **Temple Bell (`playPoojaBell`)**: Multi-harmonic bell bronze timbre with subtle pitch shimmer.
+- **Progressive Web App (PWA)**: Installable standalone on Android, iOS, Windows, and macOS with offline caching.
 
 ---
 
@@ -126,13 +145,17 @@ This project is maintained across dual synchronized repositories:
 ## Local Execution & Deployment
 
 ### Local Execution
-Double-click `index.html` to run in any modern desktop browser (Chrome, Firefox, Safari, Edge). An active internet connection is only required on the first launch to load web fonts. Web Audio initializes immediately upon the first user interaction in adherence to browser autoplay policies.
+Run a local static HTTP server or open `index.html` directly in modern desktop/mobile browsers (Chrome, Firefox, Safari, Edge):
+```bash
+python -m http.server 8080
+```
+Open `http://localhost:8080/`. Web Audio initializes on the first user interaction in compliance with browser autoplay standards.
 
 ### GitHub Pages Deployment
 1. Navigate to repository **Settings -> Pages**.
 2. Under **Build and deployment**, set **Source** to `Deploy from a branch`.
 3. Select branch `main` and path `/ (root)`.
-4. Save. GitHub Pages will build and publish the live site within sixty seconds.
+4. Save. GitHub Pages builds and publishes the live site within sixty seconds.
 
 ---
 

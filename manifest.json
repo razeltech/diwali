@@ -1,0 +1,19 @@
+{
+  "name": "Jwala — Pure Light Diwali & Pooja Diya",
+  "short_name": "Jwala Diwali",
+  "description": "An interactive festival courtyard and virtual pooja diya celebrating Deepavali with light and sound alone. Zero smoke. Zero pollution.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0705",
+  "theme_color": "#b45309",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

@@ -12,7 +12,14 @@
     <meta name="keywords" content="diwali, deepavali, e-diwali, virtual diwali, diwali celebration, online diya, pooja diya, eco friendly diwali, green crackers, digital fireworks, phuljhari, anaar, chakri, canvas fireworks, web audio synthesizer, festival of lights">
     <meta name="author" content="Razeltech">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://razeltech.github.io/diwali/">
+        <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="Animated_favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#b45309">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Jwala Diwali">
+<link rel="canonical" href="https://razeltech.github.io/diwali/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -84,7 +91,7 @@
     }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Noto+Sans+Devanagari:wght@700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -195,6 +202,10 @@
         /* Dim the UI when idle so the dark room stays dark */
         .brass-panel { transition: opacity 0.6s ease; }
         .ui-dim .brass-panel { opacity: 0.28; }
+        @font-face { font-family: 'JwalaTelugu'; font-weight: 700; font-display: block; src: url(data:font/woff;base64,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) format('woff'); }
+        #dockScroll.drop-delete { box-shadow: 0 0 0 2px #ef4444, 0 0 28px rgba(239, 68, 68, 0.55); }
+        .drag-ghost { position: fixed; left: 0; top: 0; z-index: 60; pointer-events: none; opacity: 0.92; will-change: transform; filter: drop-shadow(0 8px 14px rgba(0,0,0,.6)); }
+        body.dragging-item, body.dragging-item * { cursor: grabbing !important; }
     </style>
 </head>
 <body class="relative w-full h-full select-none">
@@ -254,6 +265,61 @@
         </div>
     </header>
 
+    <!-- Interactive Guidance & Tutorial Pill -->
+    <div id="tutorialPill" class="fixed bottom-28 left-1/2 -translate-x-1/2 z-40 pointer-events-none transition-all duration-300 opacity-95">
+        <div class="brass-panel px-4 py-2 rounded-full shadow-2xl border border-amber-500/40 backdrop-blur-md flex items-center gap-2.5 text-xs text-amber-200">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+            <span id="tutorialHintText" class="font-medium tracking-wide">Touch or swipe any firecracker with your Phuljhari to ignite</span>
+        </div>
+    </div>
+
+    <!-- Pooja Diya: Heritage & Environmental Meaning Card (Collapsed by default, shown in Pooja mode) -->
+    <div id="poojaMeaningContainer" class="hidden fixed top-20 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center pointer-events-auto">
+        <button id="poojaMeaningBtn" class="brass-panel px-4 py-2 rounded-2xl border border-amber-500/40 shadow-xl text-xs font-semibold text-amber-200 hover:text-amber-100 flex items-center gap-2 active:scale-95 transition">
+            <svg class="w-4 h-4 text-amber-300" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3ZM12 19C8.13 19 5 15.87 5 12C5 8.13 8.13 5 12 5C15.87 5 19 8.13 19 12C19 15.87 15.87 19 12 19ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z"/>
+            </svg>
+            <span>The Sacred Purpose of Deepavali</span>
+            <svg id="meaningChevron" class="w-3.5 h-3.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+            </svg>
+        </button>
+
+        <div id="poojaMeaningCard" class="hidden mt-3 w-[92vw] max-w-lg brass-panel rounded-3xl p-5 border border-amber-500/50 shadow-2xl backdrop-blur-xl text-amber-100 text-xs sm:text-sm leading-relaxed max-h-[70vh] overflow-y-auto no-scrollbar">
+            <div class="flex items-center justify-between pb-3 border-b border-amber-500/30 mb-3">
+                <h3 class="font-traditional text-amber-300 text-sm sm:text-base font-bold tracking-wide">Tamaso Ma Jyotir Gamaya</h3>
+                <button id="closeMeaningBtn" class="text-amber-400 hover:text-amber-200 text-xs px-2.5 py-1 rounded-lg bg-stone-900/70 border border-amber-500/40">✕ Close</button>
+            </div>
+            
+            <p class="text-amber-200/90 mb-3 italic text-xs">
+                "From darkness unto light, from ignorance unto wisdom, from mortality unto immortality."
+            </p>
+
+            <div class="space-y-3">
+                <div>
+                    <h4 class="font-semibold text-amber-300 mb-0.5">Why Deepavali is Celebrated Worldwide</h4>
+                    <p class="text-stone-300/90 text-xs leading-normal">
+                        Deepavali literally means <em>a continuous row of lamps</em> (<em>Deepa</em> = light, <em>Avali</em> = row). It commemorates Sri Rama's return to Ayodhya, Bhagwan Krishna's triumph over spiritual darkness (Narakasura), and the awakening of inner righteousness and abundance (Maha Lakshmi). It is a universal celebration of inner self-purification and new beginnings.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-amber-300 mb-0.5">The Environmental Sacredness of the Mitti Diya</h4>
+                    <p class="text-stone-300/90 text-xs leading-normal">
+                        Vedic tradition honors <em>Panchatatva</em> (the five sacred elements: Earth, Water, Fire, Air, and Space). A traditional earthen clay lamp (<em>Mitti ka Diya</em>) is crafted from river mud, fueled by natural sesame or mustard seed oil, and lighted with pure cotton. It is 100% biodegradable and honors Mother Earth (<em>Prakriti</em>) and all sentient life with zero toxic smoke or plastic waste.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-amber-300 mb-0.5">Lighting the Lamp Within</h4>
+                    <p class="text-stone-300/90 text-xs leading-normal">
+                        Just as a single lamp can kindle ten thousand others without diminishing its own flame, sharing compassion, kindness, and truth dispels darkness across the world. Jwala brings this timeless celebration into the digital age with pure light and zero emissions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bottom Traditional Cracker & Diya Arsenal Dock (Hidden in Big Pooja Diya Mode) -->
     <nav id="crackerDock">
         <div id="dockScroll" class="brass-panel rounded-3xl no-scrollbar">
@@ -289,6 +355,16 @@
                 </svg>
                 <span class="text-[10px] font-semibold text-amber-200 mt-1">Chakri</span>
             </button>
+            <!-- Surya Chakra (Giant Solar Spinner) -->
+            <button data-tool="surya_chakra" class="item-slot shrink-0 w-16 md:w-20 rounded-2xl py-2 px-1 flex flex-col items-center justify-center">
+                <svg class="w-7 h-7 md:w-9 md:h-9" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="16" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 2"/>
+                    <circle cx="24" cy="24" r="9" fill="#DC2626" stroke="#FEF08A" stroke-width="1.8"/>
+                    <path d="M24 6V11M24 37V42M6 24H11M37 24H42M11 11L15 15M33 33L37 37M37 11L33 15M15 33L11 37" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"/>
+                    <circle cx="24" cy="24" r="3.5" fill="#FEF08A"/>
+                </svg>
+                <span class="text-[10px] font-semibold text-amber-200 mt-1">Surya Chakra</span>
+            </button>
 
             <!-- 4. Anaar (Flower Pot) -->
             <button data-tool="anaar" class="item-slot shrink-0 w-16 md:w-20 rounded-2xl py-2 px-1 flex flex-col items-center justify-center">
@@ -298,6 +374,16 @@
                     <polygon points="18,24 30,24 33,32 15,32" fill="#F59E0B" opacity="0.85"/>
                 </svg>
                 <span class="text-[10px] font-semibold text-amber-200 mt-1">Anaar</span>
+            </button>
+            <!-- Colour Fountain (Multi-Stage Flowerpot) -->
+            <button data-tool="colour_fountain" class="item-slot shrink-0 w-16 md:w-20 rounded-2xl py-2 px-1 flex flex-col items-center justify-center">
+                <svg class="w-7 h-7 md:w-9 md:h-9" viewBox="0 0 48 48" fill="none">
+                    <path d="M20 12H28L36 38H12L20 12Z" fill="#7C3AED" stroke="#FBBF24" stroke-width="1.6"/>
+                    <path d="M16 26H32L34 32H14L16 26Z" fill="#059669"/>
+                    <path d="M18 19H30L31 23H17L18 19Z" fill="#EA580C"/>
+                    <path d="M24 6V12M20 8L24 12L28 8" stroke="#FEF08A" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="text-[10px] font-semibold text-amber-200 mt-1">Col. Fountain</span>
             </button>
 
             <!-- 5. Sutli Bomb -->
@@ -321,6 +407,17 @@
                     <path d="M20 30C18 34 15 35 14 37" stroke="#FDE047" stroke-width="1.8" stroke-linecap="round"/>
                 </svg>
                 <span class="text-[10px] font-semibold text-amber-200 mt-1">Rocket</span>
+            </button>
+            <!-- Butterfly (Fluttering Aerial Spinner) -->
+            <button data-tool="butterfly" class="item-slot shrink-0 w-16 md:w-20 rounded-2xl py-2 px-1 flex flex-col items-center justify-center">
+                <svg class="w-7 h-7 md:w-9 md:h-9" viewBox="0 0 48 48" fill="none">
+                    <path d="M24 16V34M24 16L19 10M24 16L29 10" stroke="#FDE047" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M24 18C16 12 10 20 12 28C14 36 24 32 24 32C24 32 34 36 36 28C38 20 32 12 24 18Z" fill="#06B6D4" stroke="#F59E0B" stroke-width="1.8"/>
+                    <ellipse cx="24" cy="25" rx="3" ry="8" fill="#DC2626"/>
+                    <circle cx="17" cy="24" r="2.5" fill="#FACC15"/>
+                    <circle cx="31" cy="24" r="2.5" fill="#FACC15"/>
+                </svg>
+                <span class="text-[10px] font-semibold text-amber-200 mt-1">Butterfly</span>
             </button>
 
             <!-- 7. 100 Wala Lad -->
@@ -409,6 +506,17 @@
                 </svg>
                 <span class="text-[10px] font-semibold text-amber-200 mt-1">60 Shots</span>
             </button>
+            <!-- Sky Mine (Ground Mortar Blast) -->
+            <button data-tool="sky_mine" class="item-slot shrink-0 w-16 md:w-20 rounded-2xl py-2 px-1 flex flex-col items-center justify-center">
+                <svg class="w-7 h-7 md:w-9 md:h-9" viewBox="0 0 48 48" fill="none">
+                    <rect x="15" y="16" width="18" height="24" rx="3" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+                    <line x1="15" y1="24" x2="33" y2="24" stroke="#DC2626" stroke-width="2"/>
+                    <line x1="15" y1="32" x2="33" y2="32" stroke="#FACC15" stroke-width="2"/>
+                    <path d="M24 8V16M20 10L24 14L28 10" stroke="#FBBF24" stroke-width="2.4" stroke-linecap="round"/>
+                    <circle cx="24" cy="8" r="3" fill="#EF4444"/>
+                </svg>
+                <span class="text-[10px] font-semibold text-amber-200 mt-1">Sky Mine</span>
+            </button>
 
         </div>
     </nav>
@@ -447,12 +555,17 @@
 
                 // Master bus: compressor (so dense lads never clip) + street-echo convolver
                 this.comp = this.ctx.createDynamicsCompressor();
-                this.comp.threshold.value = -16;
-                this.comp.knee.value = 12;
-                this.comp.ratio.value = 6;
-                this.comp.attack.value = 0.002;
-                this.comp.release.value = 0.2;
-                this.comp.connect(this.ctx.destination);
+                this.comp.threshold.value = -12;
+                this.comp.knee.value = 8;
+                this.comp.ratio.value = 12;
+                this.comp.attack.value = 0.001;
+                this.comp.release.value = 0.12;
+
+                // Master Limiter Ceiling to guarantee zero digital clipping or browser mute
+                this.masterLimiter = this.ctx.createGain();
+                this.masterLimiter.gain.value = 0.88;
+                this.comp.connect(this.masterLimiter);
+                this.masterLimiter.connect(this.ctx.destination);
 
                 this.bus = this.ctx.createGain();
                 this.bus.gain.value = 1;
@@ -521,64 +634,68 @@
             }
 
             /**
-             * Cracker-lad train. The whole string is rendered as ONE audio buffer so
-             * that a 100-wala is a clean "tak-tak-tak" and a 10,000-wala is a thunderous roll.
-             *  kind 'thread' -> straight hanging string, steady distinct cracks
-             *  kind 'roll'   -> big coiled roll, builds into a dense machine-gun roar
+             * Cracker-lad train, built from individual paper-cracker "taks".
+             *  - every cracker is a dry click + tiny paper-snap ring (no motor-like hum)
+             *  - timing is irregular around the 0.05 s beat: pairs, hiccups, random placement
+             *  - occasional bigger cracker with a short thump
+             *  kind 'thread' -> one cracker per beat (clear tak-tak-tak)
+             *  kind 'roll'   -> several crackers per beat, scattered -> crackling roar
              */
             playCrackerTrain(popCount, duration, weight = 0.4, kind = 'thread', perBeat = 1) {
                 if (this.muted || !this.ctx) return;
                 const sr = this.ctx.sampleRate;
-                const len = Math.floor((duration + 0.5) * sr);
+                const len = Math.floor((duration + 0.6) * sr);
                 const buf = this.ctx.createBuffer(1, len, sr);
                 const d = buf.getChannelData(0);
 
                 const addPop = (s0, amp, w) => {
-                    const L = Math.floor(sr * (0.02 + w * 0.03));
-                    const decC = Math.exp(-1 / ((0.0011 + Math.random() * 0.0008) * sr));
-                    const decB = Math.exp(-1 / ((0.005 + w * 0.012) * sr));
-                    const decT = Math.exp(-1 / (0.011 * sr));
-                    const a = 0.1 + (1 - w) * 0.25;
-                    const f0 = 130 + w * 90;
-                    let ec = 1, eb = 1, et = 1, lp = 0, ph = 0;
+                    const L = Math.floor(sr * (0.016 + w * 0.024));
+                    const decC = Math.exp(-1 / ((0.0009 + Math.random() * 0.0006) * sr));
+                    const decB = Math.exp(-1 / ((0.004 + w * 0.009) * sr));
+                    const a = 0.12 + (1 - w) * 0.28;
+                    let ec = 1, eb = 1, lp = 0;
                     const end = Math.min(L, len - s0);
                     for (let j = 0; j < end; j++) {
                         const n = Math.random() * 2 - 1;
                         lp += (n - lp) * a;
-                        let v = n * ec * 0.9 + lp * eb * (1.5 + w * 2.2);
-                        if (w > 0.35) {
-                            ph += 6.2832 * (f0 * Math.exp(-j / (sr * 0.016)) + 42) / sr;
-                            v += Math.sin(ph) * et * w * 1.3;
-                        }
+                        // Sharp cardboard snap (high transient) + crisp explosive body without synthetic sine drums
+                        const v = n * ec * 1.05 + lp * eb * (1.6 + w * 2.0);
                         d[s0 + j] += v * amp;
-                        ec *= decC; eb *= decB; et *= decT;
+                        ec *= decC; eb *= decB;
                     }
                 };
 
-                // One beat every 0.05 s; bigger lads fire several crackers on each beat
-                const STEP = 0.05;
-                const beats = Math.max(1, Math.round(duration / STEP));
-                for (let bi = 0; bi < beats; bi++) {
-                    for (let k = 0; k < perBeat; k++) {
-                        const jitter = perBeat === 1 ? (Math.random() - 0.5) * 0.006 : (Math.random() - 0.5) * 0.03;
-                        const t0 = Math.max(0, bi * STEP + jitter);
-                        const s0 = Math.floor(t0 * sr);
-                        const amp = kind === 'thread' ? (0.5 + Math.random() * 0.5) : (0.3 + Math.random() * 0.6);
-                        addPop(s0, amp, weight * (0.8 + Math.random() * 0.4));
+                // Realistic ladi firing timeline: individual crackers with organic spacing and micro-delays
+                let t0 = 0.02;
+                while (t0 < duration) {
+                    const s0 = Math.floor(t0 * sr);
+                    const amp = kind === 'thread' ? (0.65 + Math.random() * 0.35) : (0.42 + Math.random() * 0.58);
+                    addPop(s0, amp, weight * (0.85 + Math.random() * 0.3));
+
+                    // Thread ladi: 0.045s - 0.085s delay between individual crackers with occasional pairs (0.02s)
+                    // Roll ladi: clustered bursts with subtle turns
+                    let delay;
+                    if (kind === 'thread') {
+                        const isPair = Math.random() < 0.24;
+                        delay = isPair ? 0.022 : (0.062 + (Math.random() - 0.5) * 0.024);
+                    } else {
+                        const isCluster = Math.random() < 0.72;
+                        delay = isCluster ? (0.034 + Math.random() * 0.018) : (0.075 + Math.random() * 0.03);
                     }
+                    t0 += delay;
                 }
 
-                // Street echo (comb) + soft clip
-                const ed = Math.floor(0.075 * sr);
-                for (let i = ed; i < len; i++) d[i] += d[i - ed] * 0.17;
-                for (let i = 0; i < len; i++) d[i] = Math.tanh(d[i] * 0.85);
+                // Street acoustic reflections & crisp limiter
+                const ed = Math.floor(0.068 * sr);
+                for (let i = ed; i < len; i++) d[i] += d[i - ed] * 0.16;
+                for (let i = 0; i < len; i++) d[i] = Math.tanh(d[i] * 0.88);
 
                 const src = this.ctx.createBufferSource();
                 src.buffer = buf;
                 const g = this.ctx.createGain();
-                g.gain.value = kind === 'roll' ? 0.8 : 0.72;
+                g.gain.value = kind === 'roll' ? 0.82 : 0.76;
                 src.connect(g);
-                this.route(g, 0.1);
+                this.route(g, 0.08);
                 this.trainSources.add(src);
                 src.onended = () => this.trainSources.delete(src);
                 src.start(this.ctx.currentTime);
@@ -618,17 +735,18 @@
                 body.connect(lp); lp.connect(bg);
                 this.route(bg, 0.35);
 
-                // 3. Short thump
-                const o = this.ctx.createOscillator();
-                const og = this.ctx.createGain();
-                o.type = 'sine';
-                o.frequency.setValueAtTime(115, t);
-                o.frequency.exponentialRampToValueAtTime(34, t + 0.2);
-                og.gain.setValueAtTime(0.75 * size, t);
-                og.gain.exponentialRampToValueAtTime(0.0001, t + 0.24);
-                o.connect(og);
-                this.route(og, 0.2);
-                o.start(t); o.stop(t + 0.26);
+                // 3. Concussive flash-powder shock front (broadband pressure impulse, zero synth sine drum)
+                const impulse = this.noiseAt(t, 0.22);
+                const ibp = this.ctx.createBiquadFilter();
+                ibp.type = 'bandpass';
+                ibp.frequency.setValueAtTime(240, t);
+                ibp.frequency.exponentialRampToValueAtTime(80, t + 0.18);
+                ibp.Q.value = 2.2;
+                const ig = this.ctx.createGain();
+                ig.gain.setValueAtTime(0.85 * size, t);
+                ig.gain.exponentialRampToValueAtTime(0.0001, t + 0.20);
+                impulse.connect(ibp); ibp.connect(ig);
+                this.route(ig, 0.25);
 
                 // 4. Wall slap-back echo
                 const slap = this.noiseAt(t + 0.11, 0.2);
@@ -695,18 +813,19 @@
                 body.connect(bl); bl.connect(bg);
                 this.route(bg, 0.55);
 
-                // 3. Deep chest thump
-                const o = this.ctx.createOscillator();
-                const og = this.ctx.createGain();
-                o.type = 'sine';
-                o.frequency.setValueAtTime(78, t);
-                o.frequency.exponentialRampToValueAtTime(26, t + 0.55);
-                og.gain.setValueAtTime(0.0001, t);
-                og.gain.linearRampToValueAtTime(0.85 * size, t + 0.008);
-                og.gain.exponentialRampToValueAtTime(0.0001, t + 0.6);
-                o.connect(shaper); shaper.connect(og);
-                this.route(og, 0.3);
-                o.start(t); o.stop(t + 0.65);
+                // 3. Concussive aerial pressure blast (broadband atmospheric detonation shockwave, zero synth sine drum)
+                const boomImpulse = this.noiseAt(t, 0.42);
+                const bp = this.ctx.createBiquadFilter();
+                bp.type = 'bandpass';
+                bp.frequency.setValueAtTime(195, t);
+                bp.frequency.exponentialRampToValueAtTime(75, t + 0.32);
+                bp.Q.value = 2.4;
+                const bog = this.ctx.createGain();
+                bog.gain.setValueAtTime(0.0001, t);
+                bog.gain.linearRampToValueAtTime(0.95 * size, t + 0.006);
+                bog.gain.exponentialRampToValueAtTime(0.0001, t + 0.38);
+                boomImpulse.connect(bp); bp.connect(bog);
+                this.route(bog, 0.28);
             }
 
             // Sharp metallic spark pop
@@ -727,7 +846,7 @@
 
                 src.connect(filter);
                 filter.connect(gain);
-                gain.connect(this.ctx.destination);
+                this.route(gain, 0.05);
 
                 src.start(now, Math.random() * 1.5, 0.05);
             }
@@ -745,31 +864,35 @@
                     gain.gain.setValueAtTime(0.06, now + idx * 0.05);
                     gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.05 + 0.9);
                     osc.connect(gain);
-                    gain.connect(this.ctx.destination);
+                    this.route(gain, 0.05);
                     osc.start(now + idx * 0.05);
                     osc.stop(now + idx * 0.05 + 0.95);
                 });
             }
 
             // Sacred Temple Bell Resonance for Big Pooja Diya
+            // Sacred Indian Brass Temple Bell (Pooja Ghanti):
+            // Authentic bell bronze harmonics: 1180Hz (fundamental), 1870Hz, 2850Hz, 3720Hz, 4980Hz
             playPoojaBell() {
                 if (this.muted || !this.ctx) return;
                 const now = this.ctx.currentTime;
                 const partials = [
-                    { freq: 528, amp: 0.16, dur: 3.2 },
-                    { freq: 1056, amp: 0.09, dur: 2.4 },
-                    { freq: 1584, amp: 0.05, dur: 1.8 },
-                    { freq: 2217, amp: 0.03, dur: 1.1 }
+                    { freq: 1180, amp: 0.22, dur: 3.6 },
+                    { freq: 1870, amp: 0.14, dur: 2.8 },
+                    { freq: 2850, amp: 0.09, dur: 2.2 },
+                    { freq: 3720, amp: 0.06, dur: 1.6 },
+                    { freq: 4980, amp: 0.03, dur: 1.1 }
                 ];
                 partials.forEach(p => {
                     const osc = this.ctx.createOscillator();
                     const gain = this.ctx.createGain();
                     osc.type = 'sine';
                     osc.frequency.setValueAtTime(p.freq, now);
+                    osc.frequency.linearRampToValueAtTime(p.freq * 0.998, now + p.dur);
                     gain.gain.setValueAtTime(p.amp, now);
                     gain.gain.exponentialRampToValueAtTime(0.0001, now + p.dur);
                     osc.connect(gain);
-                    gain.connect(this.ctx.destination);
+                    this.route(gain, 0.04);
                     osc.start(now);
                     osc.stop(now + p.dur + 0.05);
                 });
@@ -798,7 +921,7 @@
 
                 src.connect(filter);
                 filter.connect(gain);
-                gain.connect(this.ctx.destination);
+                this.route(gain, 0.05);
 
                 src.start(now);
                 src.stop(now + duration);
@@ -842,7 +965,7 @@
 
                 src.connect(filter);
                 filter.connect(masterGain);
-                masterGain.connect(this.ctx.destination);
+                this.route(masterGain, 0.08);
 
                 src.start(now);
                 lfo.start(now);
@@ -959,29 +1082,31 @@
 
                     src.connect(hp);
                     hp.connect(g);
-                    g.connect(this.ctx.destination);
+                    this.route(g, 0.1);
 
                     src.start(t, Math.random() * 1.2, 0.035);
                 }
             }
 
             // Deep Mortar Tube Launch Thump (for 12, 30, 60 Multi-Shot Sky Repeaters)
+            // Sky shot / mortar launch tube: muffled gas expulsion puff (broadband noise, zero synth sine drum)
             playTubeThump() {
                 if (this.muted || !this.ctx) return;
                 const now = this.ctx.currentTime;
-                const osc = this.ctx.createOscillator();
+
+                const noise = this.noiseAt(now, 0.11);
+                const filter = this.ctx.createBiquadFilter();
+                filter.type = 'bandpass';
+                filter.frequency.setValueAtTime(210, now);
+                filter.Q.value = 1.3;
+
                 const gain = this.ctx.createGain();
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(150, now);
-                osc.frequency.exponentialRampToValueAtTime(38, now + 0.16);
+                gain.gain.setValueAtTime(0.46, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.095);
 
-                gain.gain.setValueAtTime(0.32, now);
-                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
-
-                osc.connect(gain);
-                gain.connect(this.ctx.destination);
-                osc.start(now);
-                osc.stop(now + 0.19);
+                noise.connect(filter);
+                filter.connect(gain);
+                this.route(gain, 0.04);
             }
 
             // Authentic "Phat-Phat-Phat" Staccato Garland Lad Cracker Sound (100 / 1K / 5K / 10K Wala)
@@ -1004,65 +1129,72 @@
 
                 noiseSrc.connect(bandpass);
                 bandpass.connect(gain);
-                gain.connect(this.ctx.destination);
+                this.route(gain, 0.05);
 
                 noiseSrc.start(now, Math.random() * 1.4, 0.06);
 
-                // 2. Crisp street-echo slap & mid-bass punch
-                const punch = this.ctx.createOscillator();
+                // 2. Crisp cardboard body resonance & street-echo slap (zero synth sine drum)
+                const bodyNoise = this.noiseAt(now, 0.06);
+                const bodyFilter = this.ctx.createBiquadFilter();
+                bodyFilter.type = 'bandpass';
+                bodyFilter.frequency.setValueAtTime(320, now);
+                bodyFilter.Q.setValueAtTime(1.8, now);
+
                 const punchGain = this.ctx.createGain();
-                punch.type = 'sine';
-                punch.frequency.setValueAtTime(260 + Math.random() * 90, now);
-                punch.frequency.exponentialRampToValueAtTime(48, now + 0.05);
+                punchGain.gain.setValueAtTime(0.48 * intensity, now);
+                punchGain.gain.exponentialRampToValueAtTime(0.001, now + 0.048);
 
-                punchGain.gain.setValueAtTime(0.42 * intensity, now);
-                punchGain.gain.exponentialRampToValueAtTime(0.001, now + 0.055);
-
-                punch.connect(punchGain);
-                punchGain.connect(this.ctx.destination);
-                punch.start(now);
-                punch.stop(now + 0.06);
+                bodyNoise.connect(bodyFilter);
+                bodyFilter.connect(punchGain);
+                this.route(punchGain, 0.04);
             }
 
             // Heavy Sutli Bomb / Sky Burst Explosion
+            // High-caliber fireworks shell aerial detonation:
+            // 1. Instant razor-sharp shell break snap (flash powder tearing cardboard casing)
+            // 2. Concussive pressure shockwave (broadband acoustic thump, NOT an 808 sine drum)
+            // 3. Rolling atmospheric sky rumble & multi-tap courtyard echo
             playExplosion(intensity = 1.0) {
                 if (this.muted || !this.ctx) return;
                 const now = this.ctx.currentTime;
+                const s = Math.max(0.5, Math.min(2.2, intensity));
 
-                // 1. Sub-bass chest punch
-                const subOsc = this.ctx.createOscillator();
-                const subGain = this.ctx.createGain();
-                subOsc.type = 'sine';
-                subOsc.frequency.setValueAtTime(135 * intensity, now);
-                subOsc.frequency.exponentialRampToValueAtTime(24, now + 0.45);
+                // 1. Supersonic shell casing break snap (high-pass noise: 0 - 25ms)
+                const crack = this.noiseAt(now, 0.05);
+                const hp = this.ctx.createBiquadFilter();
+                hp.type = 'highpass';
+                hp.frequency.setValueAtTime(1700, now);
+                hp.frequency.exponentialRampToValueAtTime(600, now + 0.03);
+                const cg = this.ctx.createGain();
+                cg.gain.setValueAtTime(0.85 * s, now);
+                cg.gain.exponentialRampToValueAtTime(0.0001, now + 0.032);
+                crack.connect(hp); hp.connect(cg);
+                this.route(cg, 0.02);
 
-                subGain.gain.setValueAtTime(0.65 * intensity, now);
-                subGain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+                // 2. Concussive shockwave boom (bandpass filtered noise, 200Hz down to 80Hz)
+                const boom = this.noiseAt(now, 0.36 * s);
+                const bp = this.ctx.createBiquadFilter();
+                bp.type = 'bandpass';
+                bp.frequency.setValueAtTime(200, now);
+                bp.frequency.exponentialRampToValueAtTime(80, now + 0.26 * s);
+                bp.Q.value = 2.0;
+                const bg = this.ctx.createGain();
+                bg.gain.setValueAtTime(0.92 * s, now);
+                bg.gain.exponentialRampToValueAtTime(0.0001, now + 0.32 * s);
+                boom.connect(bp); bp.connect(bg);
+                this.route(bg, 0.10);
 
-                subOsc.connect(subGain);
-                subGain.connect(this.ctx.destination);
-                subOsc.start(now);
-                subOsc.stop(now + 0.52);
-
-                // 2. Broadband crack + reverb tail
-                const noiseSrc = this.ctx.createBufferSource();
-                noiseSrc.buffer = this.noiseBuffer;
-
-                const lowpass = this.ctx.createBiquadFilter();
-                lowpass.type = 'lowpass';
-                lowpass.frequency.setValueAtTime(2600, now);
-                lowpass.frequency.exponentialRampToValueAtTime(160, now + 0.9 * intensity);
-
-                const noiseGain = this.ctx.createGain();
-                noiseGain.gain.setValueAtTime(0.55 * intensity, now);
-                noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.95 * intensity);
-
-                noiseSrc.connect(lowpass);
-                lowpass.connect(noiseGain);
-                noiseGain.connect(this.ctx.destination);
-
-                noiseSrc.start(now);
-                noiseSrc.stop(now + 1.0 * intensity);
+                // 3. Atmospheric rolling rumble and distant courtyard reverberation
+                const rumble = this.noiseAt(now, 1.2 * s);
+                const lp = this.ctx.createBiquadFilter();
+                lp.type = 'lowpass';
+                lp.frequency.setValueAtTime(850, now);
+                lp.frequency.exponentialRampToValueAtTime(100, now + 1.0 * s);
+                const rg = this.ctx.createGain();
+                rg.gain.setValueAtTime(0.52 * s, now);
+                rg.gain.exponentialRampToValueAtTime(0.0001, now + 1.1 * s);
+                rumble.connect(lp); lp.connect(rg);
+                this.route(rg, 0.18);
             }
         }
 
@@ -1108,7 +1240,8 @@
             windAngle: 0,
             windVelocity: 0,
             flameHeightScale: 1,
-            oilRipples: []
+            oilRipples: [],
+            incenseSmoke: []
         };
 
         const sparks = [];
@@ -1134,6 +1267,18 @@
             if (typeof hex !== 'string' || hex[0] !== '#' || hex.length !== 7) return;
             const n = parseInt(hex.slice(1), 16);
             screenFlashColor = `${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}`;
+        }
+
+        function hexToRgb(hex) {
+            if (!hex || !hex.startsWith('#')) return '255, 200, 80';
+            const n = parseInt(hex.slice(1), 16);
+            if (hex.length === 4) {
+                const r = ((n >> 8) & 15) * 17;
+                const g = ((n >> 4) & 15) * 17;
+                const b = (n & 15) * 17;
+                return `${r}, ${g}, ${b}`;
+            }
+            return `${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}`;
         }
 
         // Real flight time (seconds) of a shell, simulated with the same physics as AerialShell
@@ -1342,8 +1487,57 @@
             'saturn_ring',      // Ball of stars wrapped in a tilted ring
             'spider_comets',    // Long-tailed comets
             'silver_glitter',   // White strobing glitter with crackle
-            'chit_chit_storm'   // Pure crackling star cluster with rapid "chit-chit" pops
+            'chit_chit_storm',  // Pure crackling star cluster with rapid "chit-chit" pops
+            'greeting'          // Writes Happy Diwali / Happy Deepavali / Telugu wishes in the sky
         ];
+
+        // ---- Greeting bursts: sparks fly out and settle into readable words ----
+        const GREETINGS = [
+            { t: 'Happy Diwali',            f: '800 {px}px "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif', cols: ['#FFD700', '#FFF3B0'] },
+            { t: 'Happy Deepavali',         f: '800 {px}px "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif', cols: ['#FF9933', '#FFE082'] },
+            { t: 'దీపావళి\nశుభాకాంక్షలు',      f: '700 {px}px "JwalaTelugu", "Noto Sans Telugu", "Nirmala UI", "Gautami", sans-serif', cols: ['#FFB703', '#FFF3B0'] },
+            { t: 'శుభ దీపావళి',               f: '700 {px}px "JwalaTelugu", "Noto Sans Telugu", "Nirmala UI", "Gautami", sans-serif', cols: ['#FF9933', '#FFD700'] }
+        ];
+
+        function buildGreetingPoints(g) {
+            const px = 96;
+            const font = g.f.replace('{px}', px);
+            const c = document.createElement('canvas');
+            let x = c.getContext('2d');
+            x.font = font;
+            const lines = g.t.split('\n');
+            const lh = px * 1.5;
+            const w = Math.ceil(Math.max(...lines.map(l => x.measureText(l).width))) + 30;
+            const h = Math.round(lh * lines.length + px * 0.4);
+            c.width = w; c.height = h;
+            x = c.getContext('2d');
+            x.font = font;
+            x.textAlign = 'center';
+            x.textBaseline = 'middle';
+            x.fillStyle = '#fff';
+            lines.forEach((l, i) => x.fillText(l, w / 2, h / 2 + (i - (lines.length - 1) / 2) * lh));
+            const data = x.getImageData(0, 0, w, h).data;
+            let filled = 0;
+            for (let i = 3; i < data.length; i += 4) if (data[i] > 90) filled++;
+            const step = Math.max(2, Math.round(Math.sqrt(filled / 560)));
+            const pts = [];
+            for (let yy = 0; yy < h; yy += step) {
+                for (let xx = 0; xx < w; xx += step) {
+                    if (data[(yy * w + xx) * 4 + 3] > 90) pts.push({ x: (xx - w / 2) / w, y: (yy - h / 2) / w });
+                }
+            }
+            g.pts = pts;
+            g.aspect = h / w;
+            return pts;
+        }
+        function getGreetingPoints(g) { return g.pts || buildGreetingPoints(g); }
+        if (document.fonts && document.fonts.load) {
+            Promise.all([
+                document.fonts.load('800 40px "Plus Jakarta Sans"', 'Happy Diwali'),
+                document.fonts.load('700 40px "Noto Sans Devanagari"', 'शुभ दीपावली'),
+                document.fonts.load('700 40px "JwalaTelugu"', 'దీపావళి శుభాకాంక్షలు')
+            ]).then(() => document.fonts.ready).then(() => GREETINGS.forEach(buildGreetingPoints)).catch(() => {});
+        }
 
         class AerialShell {
             constructor(x, y, vx, vy, targetY, shellSize = 1.0, burstType = null) {
@@ -1356,7 +1550,14 @@
                 this.wobbleSeed = Math.random() * 100;
                 this.wobbleAmp = (Math.random() - 0.5) * 0.32;
                 this.done = false;
-                this.burstType = burstType || SKY_BURST_TYPES[Math.floor(Math.random() * SKY_BURST_TYPES.length)];
+                if (burstType) {
+                    this.burstType = burstType;
+                } else if (Math.random() < 0.4) {
+                    this.burstType = 'greeting';   // rockets often write Happy Diwali / Happy Deepavali / Telugu wishes
+                } else {
+                    const pool = SKY_BURST_TYPES.filter(b => b !== 'greeting');
+                    this.burstType = pool[Math.floor(Math.random() * pool.length)];
+                }
                 this.color = DIWALI_COLORS[Math.floor(Math.random() * DIWALI_COLORS.length)];
                 this.secondaryColor = DIWALI_COLORS[Math.floor(Math.random() * DIWALI_COLORS.length)];
             }
@@ -1502,6 +1703,29 @@
                         }
                     }
                     setTimeout(() => audio.playChitChitCluster(15, 0.7), 250);
+                }
+
+                // NEW: Greeting text written in sparks
+                else if (this.burstType === 'greeting') {
+                    if (typeof window._greetingIdx === 'undefined') window._greetingIdx = 0;
+                    const g = GREETINGS[(window._greetingIdx++) % GREETINGS.length];
+                    const pts = getGreetingPoints(g);
+                    const W = Math.min(width * 0.88, 600);
+                    const halfW = W / 2;
+                    const cx = Math.max(halfW + 8, Math.min(width - halfW - 8, this.x));
+                    const cy = Math.max(90, this.y);
+                    shockwaves.push(new Shockwave(cx, cy, 150 * s, g.cols[0]));
+                    for (let i = 0; i < pts.length; i++) {
+                        const col = g.cols[i % 3 === 0 ? 1 : 0];
+                        sparks.push(new Spark(cx, cy, (pts[i].x * W) / 17, (pts[i].y * W) / 17, col, 3.6, 0.0082, 0.01, 0.945,
+                            { strobe: i % 6 === 0, crackle: i % 40 === 0 }));
+                    }
+                    for (let i = 0; i < 24; i++) {
+                        const ang = Math.random() * Math.PI * 2;
+                        const spd = 3 + Math.random() * 6;
+                        sparks.push(new Spark(cx, cy, Math.cos(ang) * spd, Math.sin(ang) * spd, '#FFF3B0', 2, 0.03, 0.05, 0.95));
+                    }
+                    setTimeout(() => audio.playChitChitCluster(16, 0.9), 900);
                 }
 
                 // NEW: Heart
@@ -1671,6 +1895,19 @@
                 this.spinAngle = 0;
                 this.flameFlicker = Math.random() * 100;
 
+                // Colour Fountain randomized multi-stage color identity
+                if (type === 'colour_fountain') {
+                    const FOUNTAIN_PALETTES = [
+                        ['#FF9933', '#10B981', '#C084FC'], // Saffron -> Emerald -> Violet
+                        ['#EC4899', '#06B6D4', '#FACC15'], // Hot Pink -> Peacock Cyan -> Gold
+                        ['#8B5CF6', '#F97316', '#38BDF8'], // Electric Purple -> Tangerine -> Sky Blue
+                        ['#EF4444', '#10B981', '#F59E0B'], // Crimson -> Jade -> Amber
+                        ['#06B6D4', '#A855F7', '#FFFBEB'], // Cyan -> Neon Purple -> Diamond White
+                        ['#F43F5E', '#84CC16', '#E11D48']  // Ruby -> Lime Green -> Sizzling Rose
+                    ];
+                    this.fountainColors = FOUNTAIN_PALETTES[Math.floor(Math.random() * FOUNTAIN_PALETTES.length)];
+                }
+
                 // Rocket & Multi-Shot properties
                 this.tiltAngle = (Math.random() - 0.5) * 0.28; // Natural launch slant
                 this.shotsRemaining = 0;
@@ -1704,6 +1941,29 @@
                         return {
                             x: this.x + Math.sin((1 - p) * 3) * 5,
                             y: this.y - 42 - (1 - p) * 16
+                        };
+                    case 'colour_fountain':
+                        return {
+                            x: this.x + Math.sin((1 - p) * 3) * 5,
+                            y: this.y - 48 - (1 - p) * 16
+                        };
+                    case 'surya_chakra': {
+                        const angle = -0.8 + p * 0.8;
+                        const dist = 40 * (1 - p) + 20 * p;
+                        return {
+                            x: this.x + Math.cos(angle) * dist,
+                            y: this.y + Math.sin(angle) * (dist * 0.55)
+                        };
+                    }
+                    case 'butterfly':
+                        return {
+                            x: this.x,
+                            y: this.y - 18 - (1 - p) * 14
+                        };
+                    case 'sky_mine':
+                        return {
+                            x: this.x + 12 * (1 - p),
+                            y: this.y - 28 - (1 - p) * 12
                         };
                     case 'sutli':
                         return {
@@ -1741,8 +2001,14 @@
                 if (this.state !== 'unlit') return;
                 audio.init();
                 this.state = 'fuse';
+                if (!userHasIgnitedFirstCracker) {
+                    userHasIgnitedFirstCracker = true;
+                    if (tutorialPill) {
+                        setTimeout(() => { if (tutorialPill) tutorialPill.style.opacity = '0'; }, 2000);
+                    }
+                }
                 layoutDirty = true;
-                if (this.type === 'sutli' || this.type === 'rocket' || this.isWala() || this.isMultiShot()) {
+                if (this.type !== 'diya') {
                     audio.playFuseHiss(1 / this.fuseSpeed / 60, 0.05);
                 }
 
@@ -1763,6 +2029,32 @@
                 } else if (this.type === 'chakri') {
                     this.activeTimer = 215;
                     audio.playChakriSpin(3.6);
+                } else if (this.type === 'surya_chakra') {
+                    this.activeTimer = 320;
+                    audio.playChakriSpin(5.0);
+                } else if (this.type === 'colour_fountain') {
+                    this.activeTimer = 290;
+                    audio.playAnaarRoar(4.8);
+                } else if (this.type === 'butterfly') {
+                    this.activeTimer = 110;
+                    this.flightVy = -4.2;
+                    this.flightVx = 0;
+                    audio.playChakriSpin(1.8);
+                } else if (this.type === 'sky_mine') {
+                    audio.playSutliBomb(1.4);
+                    audio.playTubeThump();
+                    screenFlashColor = '255, 200, 80';
+                    screenFlash = 0.9;
+                    this.triggerScreenShake();
+                    shockwaves.push(new Shockwave(this.x, this.y - 12, 300, '#FFD700'));
+                    shockwaves.push(new Shockwave(this.x, this.y - 12, 180, '#FF4500'));
+                    for (let i = 0; i < 38; i++) {
+                        const ang = -Math.PI * 0.5 + (Math.random() - 0.5) * 1.6;
+                        const spd = 7 + Math.random() * 14;
+                        const col = DIWALI_COLORS[Math.floor(Math.random() * DIWALI_COLORS.length)];
+                        sparks.push(new Spark(this.x, this.y - 20, Math.cos(ang) * spd, Math.sin(ang) * spd, col, 2.5 + Math.random() * 1.5, 0.012 + Math.random() * 0.008, 0.22, 0.98, { tail: true, crackle: Math.random() < 0.6 }));
+                    }
+                    this.state = 'done';
                 } else if (this.type === 'anaar') {
                     this.activeTimer = 220;
                     audio.playAnaarRoar(3.6);
@@ -1862,7 +2154,13 @@
                     const launchVy = -(11.5 + Math.random() * 3.5) - (finale ? 1 : 0);
                     const targetY = height * (0.08 + Math.random() * 0.28);
                     const size = finale ? 1.1 : (this.type === 'shot12' ? 1.0 : (this.type === 'shot30' ? 0.9 : 0.8));
-                    const burst = SKY_BURST_TYPES[(this.typeOffset + idx + k) % SKY_BURST_TYPES.length];
+                    let burst = SKY_BURST_TYPES[(this.typeOffset + idx + k) % SKY_BURST_TYPES.length];
+                    const shotNum = idx + k;
+                    const isGreetingShot = (shotNum === this.shotTotal - 1) ||
+                                          (this.type === 'shot12' && (shotNum === 3 || shotNum === 7)) ||
+                                          (this.type === 'shot30' && (shotNum % 8 === 7)) ||
+                                          (this.type === 'shot60' && (shotNum % 10 === 9));
+                    if (isGreetingShot) burst = 'greeting';
                     aerialShells.push(new AerialShell(tubeX, tubeY, vx, launchVy, targetY, size, burst));
                 }
                 this.shotsRemaining -= salvo;
@@ -1947,6 +2245,98 @@
                             ));
                         }
                         if (Math.random() < 0.35) audio.playSparkPop(2600, 0.025);
+                        if (this.activeTimer <= 0) this.state = 'done';
+
+                    } else if (this.type === 'surya_chakra') {
+                        this.activeTimer--;
+                        const speed = this.activeTimer > 100 ? 0.65 : 0.45;
+                        this.spinAngle += speed;
+                        this.x += Math.cos(this.spinAngle * 0.15) * 1.8;
+                        this.y += Math.sin(this.spinAngle * 0.11) * 0.7;
+                        this.x = Math.max(28, Math.min(width - 28, this.x));
+                        this.y = Math.max(floorY + 12, Math.min(height - 108, this.y));
+
+                        for (let i = 0; i < 11; i++) {
+                            const tangAngle = this.spinAngle + (i * Math.PI * 0.33) + (Math.random() - 0.5) * 0.25;
+                            const spd = 6 + Math.random() * 11;
+                            const col = i % 3 === 0 ? '#FEF08A' : (i % 3 === 1 ? '#F59E0B' : '#EF4444');
+                            sparks.push(new Spark(
+                                this.x + Math.cos(tangAngle) * 22,
+                                this.y + Math.sin(tangAngle) * 11,
+                                Math.cos(tangAngle) * spd,
+                                Math.sin(tangAngle) * spd * 0.65,
+                                col,
+                                2.4,
+                                0.028,
+                                0.04,
+                                0.98,
+                                { crackle: Math.random() < 0.15 }
+                            ));
+                        }
+                        if (Math.random() < 0.45) audio.playSparkPop(3200, 0.03);
+                        if (this.activeTimer <= 0) this.state = 'done';
+
+                    } else if (this.type === 'butterfly') {
+                        this.activeTimer--;
+                        this.spinAngle += 0.55;
+                        this.flightVx = Math.sin(this.activeTimer * 0.18) * 3.5;
+                        this.flightVy = (this.flightVy || -4.2) + 0.022;
+                        this.x += this.flightVx;
+                        this.y += this.flightVy;
+
+                        for (let w = -1; w <= 1; w += 2) {
+                            const wingX = this.x + w * 14;
+                            const wingY = this.y + 4;
+                            const col = Math.random() < 0.5 ? '#06B6D4' : (Math.random() < 0.8 ? '#10B981' : '#FDE047');
+                            sparks.push(new Spark(wingX, wingY, (Math.random() - 0.5) * 2 + w * 1.5, 1 + Math.random() * 2.5, col, 1.8, 0.045, 0.08));
+                        }
+                        if (Math.random() < 0.35) audio.playSparkPop(2800, 0.02);
+
+                        if (this.activeTimer <= 0 || this.y < height * 0.18) {
+                            audio.playSparkPop(1600, 0.08);
+                            shockwaves.push(new Shockwave(this.x, this.y, 45, '#38BDF8'));
+                            for (let i = 0; i < 28; i++) {
+                                const ang = Math.random() * Math.PI * 2;
+                                const spd = 2 + Math.random() * 6;
+                                sparks.push(new Spark(this.x, this.y, Math.cos(ang) * spd, Math.sin(ang) * spd, Math.random() < 0.5 ? '#06B6D4' : '#FDE047', 2.0, 0.035, 0.14, 0.96, { crackle: i % 4 === 0 }));
+                            }
+                            this.state = 'done';
+                        }
+
+                    } else if (this.type === 'colour_fountain') {
+                        this.activeTimer--;
+                        const elapsed = 290 - this.activeTimer;
+                        const pal = this.fountainColors || ['#FF9933', '#10B981', '#C084FC'];
+                        let phaseColor, plumeMult;
+                        if (elapsed < 90) {
+                            phaseColor = Math.random() > 0.35 ? pal[0] : '#FFD700';
+                            plumeMult = 0.95;
+                        } else if (elapsed < 190) {
+                            phaseColor = Math.random() > 0.4 ? pal[1] : pal[0];
+                            plumeMult = 1.3;
+                        } else {
+                            phaseColor = Math.random() > 0.4 ? pal[2] : '#FFFBEB';
+                            plumeMult = 1.6;
+                        }
+
+                        for (let i = 0; i < 11; i++) {
+                            const spread = (Math.random() - 0.5) * 0.52;
+                            const angle = -Math.PI / 2 + spread;
+                            const spd = (6.5 + Math.random() * 8.5) * plumeMult;
+                            sparks.push(new Spark(
+                                this.x,
+                                this.y - 48,
+                                Math.cos(angle) * spd,
+                                Math.sin(angle) * spd,
+                                phaseColor,
+                                2.3 + Math.random() * 1.5,
+                                0.015 + Math.random() * 0.012,
+                                0.22,
+                                0.98,
+                                { crackle: elapsed > 190 && Math.random() < 0.3 }
+                            ));
+                        }
+                        if (Math.random() < 0.5) audio.playSparkPop(2400, 0.03);
                         if (this.activeTimer <= 0) this.state = 'done';
 
                     } else if (this.type === 'anaar') {
@@ -2156,6 +2546,194 @@
                     ctx.beginPath();
                     ctx.arc(0, 0, 4.5, 0, Math.PI * 2);
                     ctx.fill();
+                }
+
+                // Surya Chakra (Giant Solar Spinner)
+                else if (this.type === 'surya_chakra') {
+                    if (this.state !== 'active') {
+                        const tip = this.getFuseTip();
+                        ctx.strokeStyle = '#FDE047';
+                        ctx.lineWidth = 2.2;
+                        ctx.beginPath();
+                        ctx.moveTo(this.x + 20, this.y);
+                        ctx.lineTo(tip.x, tip.y);
+                        ctx.stroke();
+                    }
+
+                    ctx.translate(this.x, this.y);
+                    ctx.scale(1, 0.58);
+                    ctx.rotate(this.spinAngle);
+
+                    // Outer Radiant Sun Disc
+                    ctx.fillStyle = '#DC2626';
+                    ctx.strokeStyle = '#FBBF24';
+                    ctx.lineWidth = 2.4;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, 24, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    // Solar ray teeth
+                    ctx.strokeStyle = '#F59E0B';
+                    ctx.lineWidth = 2;
+                    for (let a = 0; a < 8; a++) {
+                        const ang = a * Math.PI / 4;
+                        ctx.beginPath();
+                        ctx.moveTo(Math.cos(ang) * 14, Math.sin(ang) * 14);
+                        ctx.lineTo(Math.cos(ang) * 23, Math.sin(ang) * 23);
+                        ctx.stroke();
+                    }
+
+                    // Inner Golden Hub
+                    ctx.fillStyle = '#FEF08A';
+                    ctx.beginPath();
+                    ctx.arc(0, 0, 8, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                // Butterfly (Patanga)
+                else if (this.type === 'butterfly') {
+                    if (this.state !== 'active') {
+                        const tip = this.getFuseTip();
+                        ctx.strokeStyle = '#FDE047';
+                        ctx.lineWidth = 1.8;
+                        ctx.beginPath();
+                        ctx.moveTo(this.x, this.y - 12);
+                        ctx.lineTo(tip.x, tip.y);
+                        ctx.stroke();
+                    }
+
+                    ctx.translate(this.x, this.y);
+                    if (this.state === 'active') {
+                        ctx.rotate(Math.sin(this.spinAngle) * 0.25);
+                    }
+
+                    // Butterfly Wings (Cyan & Magenta foil)
+                    ctx.fillStyle = '#06B6D4';
+                    ctx.strokeStyle = '#FEF08A';
+                    ctx.lineWidth = 1.4;
+                    // Left wing
+                    ctx.beginPath();
+                    ctx.moveTo(0, 0);
+                    ctx.bezierCurveTo(-22, -18, -26, 8, 0, 6);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    // Right wing
+                    ctx.beginPath();
+                    ctx.moveTo(0, 0);
+                    ctx.bezierCurveTo(22, -18, 26, 8, 0, 6);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+
+                    // Wing Ornaments
+                    ctx.fillStyle = '#F43F5E';
+                    ctx.beginPath();
+                    ctx.arc(-11, -3, 3.5, 0, Math.PI * 2);
+                    ctx.arc(11, -3, 3.5, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // Central cylindrical fuse body
+                    ctx.fillStyle = '#DC2626';
+                    ctx.strokeStyle = '#FBBF24';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.roundRect(-3.5, -12, 7, 20, 2);
+                    ctx.fill();
+                    ctx.stroke();
+                }
+
+                // Colour Fountain (Multi-Stage Flower Pot)
+                else if (this.type === 'colour_fountain') {
+                    if (this.state !== 'active') {
+                        const tip = this.getFuseTip();
+                        ctx.strokeStyle = '#FDE047';
+                        ctx.lineWidth = 2;
+                        ctx.beginPath();
+                        ctx.moveTo(this.x, this.y - 48);
+                        ctx.lineTo(tip.x, tip.y);
+                        ctx.stroke();
+                    }
+
+                    if (this.state === 'active') {
+                        const g = ctx.createRadialGradient(this.x, this.y - 46, 2, this.x, this.y - 30, 145);
+                        g.addColorStop(0, 'rgba(168, 85, 247, 0.7)');
+                        g.addColorStop(0.5, 'rgba(6, 182, 212, 0.25)');
+                        g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                        ctx.fillStyle = g;
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y - 30, 145, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+
+                    // Multi-tiered ornamental cone
+                    ctx.fillStyle = '#7C3AED';
+                    ctx.strokeStyle = '#FEF08A';
+                    ctx.lineWidth = 1.6;
+                    ctx.beginPath();
+                    ctx.moveTo(this.x - 6, this.y - 48);
+                    ctx.lineTo(this.x + 6, this.y - 48);
+                    ctx.lineTo(this.x + 22, this.y);
+                    ctx.lineTo(this.x - 22, this.y);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+
+                    // Tier 2: Emerald band
+                    ctx.fillStyle = '#059669';
+                    ctx.beginPath();
+                    ctx.moveTo(this.x - 12, this.y - 32);
+                    ctx.lineTo(this.x + 12, this.y - 32);
+                    ctx.lineTo(this.x + 16, this.y - 18);
+                    ctx.lineTo(this.x - 16, this.y - 18);
+                    ctx.closePath();
+                    ctx.fill();
+
+                    // Tier 3: Gold foil band
+                    ctx.fillStyle = '#F59E0B';
+                    ctx.beginPath();
+                    ctx.moveTo(this.x - 16, this.y - 18);
+                    ctx.lineTo(this.x + 16, this.y - 18);
+                    ctx.lineTo(this.x + 19, this.y - 8);
+                    ctx.lineTo(this.x - 19, this.y - 8);
+                    ctx.closePath();
+                    ctx.fill();
+                }
+
+                // Sky Mine (Ground Mortar)
+                else if (this.type === 'sky_mine') {
+                    if (this.state !== 'active') {
+                        const tip = this.getFuseTip();
+                        ctx.strokeStyle = '#FDE047';
+                        ctx.lineWidth = 2.2;
+                        ctx.beginPath();
+                        ctx.moveTo(this.x + 9, this.y - 28);
+                        ctx.lineTo(tip.x, tip.y);
+                        ctx.stroke();
+                    }
+
+                    // Heavy mortar canister
+                    ctx.fillStyle = '#1E293B';
+                    ctx.strokeStyle = '#F59E0B';
+                    ctx.lineWidth = 1.8;
+                    ctx.beginPath();
+                    ctx.roundRect(this.x - 14, this.y - 28, 28, 28, 3);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    // Warning bands
+                    ctx.fillStyle = '#DC2626';
+                    ctx.fillRect(this.x - 13, this.y - 20, 26, 5);
+                    ctx.fillStyle = '#FACC15';
+                    ctx.fillRect(this.x - 13, this.y - 11, 26, 4);
+
+                    // Reinforced muzzle ring
+                    ctx.strokeStyle = '#FEF08A';
+                    ctx.lineWidth = 2.5;
+                    ctx.beginPath();
+                    ctx.ellipse(this.x, this.y - 28, 14, 4, 0, 0, Math.PI * 2);
+                    ctx.stroke();
                 }
 
                 // 3. Draw Anaar (Conical Flower Pot)
@@ -2531,25 +3109,67 @@
 
         /**
          * ============================================================================
-         * 6. MOBILE-FRIENDLY INTERACTION        /**
-         * ============================================================================
          * 6. MOBILE-FRIENDLY INTERACTION & INPUT HANDLERS
          * Enlarged mobile touch hitboxes + swipe-to-ignite so mobile feels effortless!
          * ============================================================================
          */
-        function checkFuseProximity(px, py) {
+        function checkFuseProximity(px, py, pressed = true) {
             for (const item of items) {
                 if (item.state === 'unlit') {
                     const tip = item.getFuseTip();
                     const distTip = Math.hypot(px - tip.x, py - tip.y);
                     const distBody = Math.hypot(px - item.x, py - (item.y - 12));
-                    // Generous 48px ignition radius so mobile fingers never miss the fuse
-                    if (distTip < 48 || (activeTool === 'sparkler' && distBody < 42)) {
+                    
+                    // Enhanced detection for garland threads (wala100 / wala1000):
+                    // Users naturally swipe or bring the phuljhari anywhere along the hanging garland line
+                    let threadHit = false;
+                    if (item.threadLen > 0) {
+                        const topY = item.y - item.threadLen;
+                        if (px >= item.x - 24 && px <= item.x + 24 && py >= topY - 14 && py <= item.y + 18) {
+                            threadHit = true;
+                        }
+                    }
+
+                    // Generous ignition radius: 48px on tip, body contact, or thread intersection
+                    if (distTip < (pressed ? 52 : 32) || (activeTool === 'sparkler' && (distBody < 48 || threadHit)) || (pressed && threadHit)) {
                         item.igniteFuse();
                     }
                 }
             }
         }
+
+        // Place a new cracker / diya on the courtyard floor
+        function placeItem(tool, x, y) {
+            if (tool === 'sparkler' || !(y > floorY - 40 && y < getDockTop() - 6)) return false;
+            layoutDirty = true;
+            items.push(new DiwaliItem(tool, x, y));
+            items.sort((a, b) => a.y - b.y);
+            for (let i = 0; i < 8; i++) {
+                const ang = Math.random() * Math.PI * 2;
+                sparks.push(new Spark(x, y, Math.cos(ang) * 2, Math.sin(ang) * 1.5, '#FFD700', 1.6, 0.06));
+            }
+            return true;
+        }
+
+        // Nearest unlit item under the pointer (fuse tip or body)
+        function pickItem(x, y) {
+            let best = null, bd = Infinity;
+            for (const item of items) {
+                if (item.state !== 'unlit') continue;
+                const tip = item.getFuseTip();
+                const dTip = Math.hypot(x - tip.x, y - tip.y);
+                const dBody = Math.hypot(x - item.x, y - (item.y - 14));
+                if (dTip < 54 || dBody < 46) {
+                    const d = Math.min(dTip, dBody);
+                    if (d < bd) { bd = d; best = item; }
+                }
+            }
+            return best;
+        }
+
+        // Drag state for moving items already in the courtyard
+        let dragCand = null, dragItem = null, dragMoved = false, dragStartX = 0, dragStartY = 0, dragOffX = 0, dragOffY = 0;
+        let dropPreview = null;
 
         function handlePointerDown(x, y) {
             audio.init();
@@ -2579,35 +3199,50 @@
                 return;
             }
 
-            // 1. First check if user tapped near ANY unlit cracker/diya to ignite it immediately
-            for (const item of items) {
-                if (item.state === 'unlit') {
-                    const tip = item.getFuseTip();
-                    const distTip = Math.hypot(x - tip.x, y - tip.y);
-                    const distBody = Math.hypot(x - item.x, y - (item.y - 14));
-                    if (distTip < 54 || distBody < 46) {
-                        layoutDirty = true;
-                        item.igniteFuse();
-                        return;
-                    }
-                }
+            // 1. Pressing an unlit cracker/diya: a tap lights it, a drag moves it (decided on release / movement)
+            const hit = pickItem(x, y);
+            if (hit) {
+                dragCand = hit;
+                dragMoved = false;
+                dragStartX = x; dragStartY = y;
+                dragOffX = hit.x - x; dragOffY = hit.y - y;
+                return;
             }
 
             // 2. If user has selected a Diya or Cracker from the dock, place it on the floor
-            if (activeTool !== 'sparkler' && y > floorY - 40 && y < getDockTop() - 6) {
-                layoutDirty = true;
-                const newItem = new DiwaliItem(activeTool, x, y);
-                items.push(newItem);
-                items.sort((a, b) => a.y - b.y);
+            placeItem(activeTool, x, y);
+        }
 
-                for (let i = 0; i < 8; i++) {
-                    const ang = Math.random() * Math.PI * 2;
-                    sparks.push(new Spark(x, y, Math.cos(ang) * 2, Math.sin(ang) * 1.5, '#FFD700', 1.6, 0.06));
+        function handlePointerUp(x, y) {
+            const cand = dragCand;
+            if (!cand) return;
+            dragCand = null;
+            if (dragMoved) {
+                cand.dragging = false;
+                dragItem = null;
+                document.body.classList.remove('dragging-item');
+                document.getElementById('dockScroll').classList.remove('drop-delete');
+                if (y > getDockTop() - 6) {
+                    // dropped back onto the dock: remove it
+                    for (let i = 0; i < 10; i++) {
+                        const ang = Math.random() * Math.PI * 2;
+                        sparks.push(new Spark(cand.x, cand.y, Math.cos(ang) * 2.5, Math.sin(ang) * 2, '#FFD700', 1.6, 0.06));
+                    }
+                    cand.state = 'done';
+                } else {
+                    if (cand.threadLen) {
+                        cand.threadLen = Math.max(40, Math.min(WALA_SPECS[cand.type].len, cand.y - 76));
+                    }
+                    items.sort((a, b) => a.y - b.y);
                 }
+                dragMoved = false;
+            } else if (cand.state === 'unlit') {
+                layoutDirty = true;
+                cand.igniteFuse();
             }
         }
 
-        function handlePointerMove(x, y) {
+        function handlePointerMove(x, y, pressed = true) {
             const dx = x - pointer.x;
             const dy = y - pointer.y;
             pointer.vx = dx;
@@ -2623,18 +3258,39 @@
                     poojaDiya.lit = true;
                     poojaDiya.flameHeightScale = 0.25;
                     audio.playPoojaBell();
-                } else if (poojaDiya.lit && dist < 160) {
+                } else if (poojaDiya.lit && dist < 220) {
                     // Passing hand or sparkler near the flame makes it sway smoothly like real air draft!
-                    poojaDiya.windVelocity += Math.max(-0.08, Math.min(0.08, dx * 0.0025));
+                    poojaDiya.windVelocity += Math.max(-0.08, Math.min(0.08, dx * 0.003));
+                    // Devotional Aarti motion: emit golden prana sparkles following swirling touch
+                    if (pressed && Math.random() < 0.28) {
+                        sparks.push(new Spark(x, y, (Math.random() - 0.5) * 1.5, (Math.random() - 0.5) * 1.5, '#FFD700', 1.8, 0.04, -0.02));
+                    }
                 }
                 return;
             }
 
-            checkFuseProximity(x, y);
+            if (dragCand) {
+                if (!dragMoved && Math.hypot(x - dragStartX, y - dragStartY) > 10) {
+                    dragMoved = true;
+                    dragItem = dragCand;
+                    dragItem.dragging = true;
+                    layoutDirty = true;
+                    document.body.classList.add('dragging-item');
+                }
+                if (dragMoved) {
+                    const ny = y + dragOffY;
+                    dragItem.x = Math.max(24, Math.min(width - 24, x + dragOffX));
+                    dragItem.y = Math.max(floorY + 10, Math.min(height - 20, ny));
+                    document.getElementById('dockScroll').classList.toggle('drop-delete', y > getDockTop() - 6);
+                }
+                return;
+            }
+
+            checkFuseProximity(x, y, pressed);
         }
 
         canvas.addEventListener('mousedown', (e) => handlePointerDown(e.clientX, e.clientY));
-        canvas.addEventListener('mousemove', (e) => handlePointerMove(e.clientX, e.clientY));
+        canvas.addEventListener('mousemove', (e) => handlePointerMove(e.clientX, e.clientY, (e.buttons & 1) === 1));
 
         canvas.addEventListener('touchstart', (e) => {
             if (e.cancelable) e.preventDefault();
@@ -2650,6 +3306,81 @@
             }
         }, { passive: false });
 
+        const endTouch = (e) => {
+            const t = e.changedTouches && e.changedTouches[0];
+            if (t) handlePointerUp(t.clientX, t.clientY);
+            else if (dragCand) handlePointerUp(pointer.x, pointer.y);
+        };
+        canvas.addEventListener('touchend', (e) => { if (e.cancelable) e.preventDefault(); endTouch(e); }, { passive: false });
+        canvas.addEventListener('touchcancel', endTouch);
+        window.addEventListener('mouseup', (e) => handlePointerUp(e.clientX, e.clientY));
+
+        // Dynamic Onboarding & Context Guidance Hints
+        const tutorialPill = document.getElementById('tutorialPill');
+        const tutorialHintText = document.getElementById('tutorialHintText');
+        let userHasIgnitedFirstCracker = false;
+        let tutorialFadeTimeout = null;
+
+        function setTutorialHint(msg, keepVisible = false) {
+            if (!tutorialPill || !tutorialHintText) return;
+            tutorialHintText.textContent = msg;
+            tutorialPill.style.opacity = '0.95';
+            clearTimeout(tutorialFadeTimeout);
+            if (!keepVisible) {
+                tutorialFadeTimeout = setTimeout(() => {
+                    if (tutorialPill) tutorialPill.style.opacity = '0';
+                }, 5500);
+            }
+        }
+
+        function updateTutorialContext() {
+            if (appMode === 'pooja') {
+                setTutorialHint('Touch wick to light • Swirl around flame to perform Aarti');
+                return;
+            }
+            if (activeTool === 'sparkler') {
+                setTutorialHint('Touch or swipe any firecracker with your Phuljhari to ignite');
+            } else {
+                const names = {
+                    diya: 'Diya', chakri: 'Chakri', surya_chakra: 'Surya Chakra', anaar: 'Anaar',
+                    colour_fountain: 'Colour Fountain', butterfly: 'Butterfly', sutli: 'Sutli Bomb',
+                    rocket: 'Rocket', wala100: '100 Wala', wala1000: '1000 Wala', wala5000: '5000 Wala',
+                    wala10000: '10K Wala', shot12: '12 Shots', shot30: '30 Shots', shot60: '60 Shots', sky_mine: 'Sky Mine'
+                };
+                const toolName = names[activeTool] || activeTool;
+                setTutorialHint(`Tap courtyard floor to place ${toolName} • Touch with sparkler to light`);
+            }
+        }
+
+        // Pooja Diya Meaning Card Toggle (Default collapsed)
+        const poojaMeaningContainer = document.getElementById('poojaMeaningContainer');
+        const poojaMeaningBtn = document.getElementById('poojaMeaningBtn');
+        const poojaMeaningCard = document.getElementById('poojaMeaningCard');
+        const meaningChevron = document.getElementById('meaningChevron');
+        const closeMeaningBtn = document.getElementById('closeMeaningBtn');
+
+        if (poojaMeaningBtn && poojaMeaningCard) {
+            poojaMeaningBtn.addEventListener('click', () => {
+                audio.init();
+                const isHidden = poojaMeaningCard.classList.contains('hidden');
+                if (isHidden) {
+                    poojaMeaningCard.classList.remove('hidden');
+                    if (meaningChevron) meaningChevron.classList.add('rotate-180');
+                } else {
+                    poojaMeaningCard.classList.add('hidden');
+                    if (meaningChevron) meaningChevron.classList.remove('rotate-180');
+                }
+            });
+        }
+
+        if (closeMeaningBtn && poojaMeaningCard) {
+            closeMeaningBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                poojaMeaningCard.classList.add('hidden');
+                if (meaningChevron) meaningChevron.classList.remove('rotate-180');
+            });
+        }
+
         // Mode Switch Buttons (Courtyard vs Big Pooja Diya)
         const courtyardModeBtn = document.getElementById('courtyardModeBtn');
         const poojaModeBtn = document.getElementById('poojaModeBtn');
@@ -2660,7 +3391,10 @@
             appMode = 'courtyard';
             courtyardModeBtn.classList.add('active');
             poojaModeBtn.classList.remove('active');
-            crackerDock.classList.remove('dock-hidden');
+            crackerDock.classList.remove('dock-hidden'); updateTutorialContext();
+            if (poojaMeaningContainer) poojaMeaningContainer.classList.add('hidden');
+            if (poojaMeaningCard) poojaMeaningCard.classList.add('hidden');
+            if (meaningChevron) meaningChevron.classList.remove('rotate-180');
         });
 
         poojaModeBtn.addEventListener('click', () => {
@@ -2668,7 +3402,8 @@
             appMode = 'pooja';
             poojaModeBtn.classList.add('active');
             courtyardModeBtn.classList.remove('active');
-            crackerDock.classList.add('dock-hidden');
+            crackerDock.classList.add('dock-hidden'); updateTutorialContext();
+            if (poojaMeaningContainer) poojaMeaningContainer.classList.remove('hidden');
             if (poojaDiya.lit) audio.playPoojaBell();
         });
 
@@ -2680,6 +3415,7 @@
                 toolButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 activeTool = btn.getAttribute('data-tool');
+                updateTutorialContext();
                 const target = btn.offsetLeft - (dockScroll.clientWidth - btn.offsetWidth) / 2;
                 dockScroll.scrollTo({ left: target, behavior: 'smooth' });
             });
@@ -2716,6 +3452,60 @@
         }, true);
         updateDockFade();
 
+        // Drag a cracker / diya from the dock straight onto the courtyard
+        let dockDragState = null;
+        toolButtons.forEach(btn => {
+            const tool = btn.getAttribute('data-tool');
+            if (tool === 'sparkler') return;
+            btn.addEventListener('pointerdown', (e) => {
+                if (e.pointerType === 'mouse' && e.button !== 0) return;
+                dockDragState = { btn, tool, id: e.pointerId, sx: e.clientX, sy: e.clientY, active: false, ghost: null };
+            });
+        });
+        function endDockDrag(e, drop) {
+            const d = dockDragState;
+            if (!d) return;
+            dockDragState = null;
+            dropPreview = null;
+            if (d.ghost) {
+                d.ghost.remove();
+                if (drop && e && placeItem(d.tool, e.clientX, e.clientY)) {
+                    toolButtons.forEach(b => b.classList.remove('active'));
+                    d.btn.classList.add('active');
+                    activeTool = d.tool;
+                }
+                dockMoved = true;           // swallow the click that follows
+                setTimeout(() => { dockMoved = false; }, 0);
+            }
+        }
+        window.addEventListener('pointermove', (e) => {
+            const d = dockDragState;
+            if (!d || e.pointerId !== d.id) return;
+            if (!d.active) {
+                const dx = e.clientX - d.sx, dy = e.clientY - d.sy;
+                if (dy < -14 && Math.abs(dy) > Math.abs(dx) * 0.8) {
+                    d.active = true;
+                    dockDrag = false;       // stop mouse drag-scroll
+                    audio.init();
+                    const g = d.btn.cloneNode(true);
+                    g.removeAttribute('data-tool');
+                    g.classList.add('drag-ghost');
+                    g.style.width = d.btn.offsetWidth + 'px';
+                    g.style.height = d.btn.offsetHeight + 'px';
+                    document.body.appendChild(g);
+                    d.ghost = g;
+                } else {
+                    return;
+                }
+            }
+            d.ghost.style.transform = `translate(${e.clientX - d.ghost.offsetWidth / 2}px, ${e.clientY - d.ghost.offsetHeight * 0.7}px)`;
+            const ok = e.clientY > floorY - 40 && e.clientY < getDockTop() - 6;
+            dropPreview = ok ? { x: e.clientX, y: e.clientY } : null;
+            if (e.cancelable) e.preventDefault();
+        }, { passive: false });
+        window.addEventListener('pointerup', (e) => { if (dockDragState && e.pointerId === dockDragState.id) endDockDrag(e, true); });
+        window.addEventListener('pointercancel', (e) => { if (dockDragState && e.pointerId === dockDragState.id) endDockDrag(e, false); });
+
         // Sound Mute Toggle
         const soundToggleBtn = document.getElementById('soundToggleBtn');
         const soundOnIcon = document.getElementById('soundOnIcon');
@@ -2723,6 +3513,7 @@
         soundToggleBtn.addEventListener('click', () => {
             audio.init();
             audio.muted = !audio.muted;
+            if (audio.muted && audio.stopTrains) audio.stopTrains();
             soundOnIcon.classList.toggle('hidden', audio.muted);
             soundOffIcon.classList.toggle('hidden', !audio.muted);
         });
@@ -2881,6 +3672,105 @@
             ctx.fill();
             ctx.stroke();
 
+            // Floating Sacred Marigold & Jasmine Petals in the Holy Reservoir
+            const petals = [
+                { a: t * 0.12 + 0.5, rx: 74, ry: 16, type: 'marigold', sz: 9 },
+                { a: t * 0.12 + 1.8, rx: 55, ry: 12, type: 'jasmine', sz: 7 },
+                { a: t * 0.12 + 3.1, rx: 84, ry: 18, type: 'marigold', sz: 10 },
+                { a: t * 0.12 + 4.3, rx: 62, ry: 14, type: 'jasmine', sz: 8 },
+                { a: t * 0.12 + 5.4, rx: 78, ry: 17, type: 'marigold', sz: 9 }
+            ];
+            petals.forEach(p => {
+                const px = Math.cos(p.a) * p.rx * scale;
+                const py = (-30 + Math.sin(p.a) * p.ry) * scale;
+                ctx.save();
+                ctx.translate(px, py);
+                if (p.type === 'marigold') {
+                    // Bright layered saffron marigold flower
+                    ctx.fillStyle = '#EA580C';
+                    for (let f = 0; f < 6; f++) {
+                        ctx.rotate(Math.PI / 3);
+                        ctx.beginPath();
+                        ctx.ellipse(p.sz * 0.45 * scale, 0, p.sz * 0.5 * scale, p.sz * 0.3 * scale, 0, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                    ctx.fillStyle = '#FBBF24';
+                    ctx.beginPath();
+                    ctx.arc(0, 0, p.sz * 0.35 * scale, 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    // Delicate 5-petal white jasmine flower with golden center
+                    ctx.fillStyle = '#FFFDF0';
+                    for (let f = 0; f < 5; f++) {
+                        ctx.rotate((Math.PI * 2) / 5);
+                        ctx.beginPath();
+                        ctx.ellipse(p.sz * 0.5 * scale, 0, p.sz * 0.45 * scale, p.sz * 0.22 * scale, 0, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                    ctx.fillStyle = '#FEF08A';
+                    ctx.beginPath();
+                    ctx.arc(0, 0, p.sz * 0.25 * scale, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                ctx.restore();
+            });
+
+            // Sacred Brass Incense Stick Holder & Agarbatti on the Left
+            const agX = -135 * scale;
+            const agY = 50 * scale;
+            // Holder
+            ctx.fillStyle = '#B45309';
+            ctx.strokeStyle = '#FDE047';
+            ctx.lineWidth = 1.2;
+            ctx.beginPath();
+            ctx.ellipse(agX, agY, 14 * scale, 4.5 * scale, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+            // Stick
+            ctx.strokeStyle = '#78350F';
+            ctx.lineWidth = 2 * scale;
+            ctx.beginPath();
+            ctx.moveTo(agX, agY);
+            ctx.lineTo(agX - 22 * scale, agY - 78 * scale);
+            ctx.stroke();
+            // Burning ember tip
+            const emberX = agX - 22 * scale;
+            const emberY = agY - 78 * scale;
+            ctx.fillStyle = '#FF3B00';
+            ctx.beginPath();
+            ctx.arc(emberX, emberY, 2.5 * scale, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Emit delicate incense smoke curls
+            if (Math.random() < 0.4) {
+                poojaDiya.incenseSmoke.push({
+                    x: emberX,
+                    y: emberY,
+                    vx: -0.2 + (Math.random() - 0.5) * 0.4 + poojaDiya.windAngle * 1.5,
+                    vy: -1.2 - Math.random() * 0.6,
+                    r: 3 * scale,
+                    alpha: 0.45,
+                    seed: Math.random() * 10
+                });
+            }
+
+            // Draw incense smoke curls
+            for (let i = poojaDiya.incenseSmoke.length - 1; i >= 0; i--) {
+                const sm = poojaDiya.incenseSmoke[i];
+                sm.y += sm.vy;
+                sm.x += sm.vx + Math.sin(t * 2 + sm.seed) * 0.45;
+                sm.r += 0.45 * scale;
+                sm.alpha -= 0.0055;
+                if (sm.alpha <= 0) {
+                    poojaDiya.incenseSmoke.splice(i, 1);
+                    continue;
+                }
+                ctx.fillStyle = `rgba(255, 230, 200, ${sm.alpha * 0.6})`;
+                ctx.beginPath();
+                ctx.arc(sm.x, sm.y, sm.r, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
             // Oil Surface Shimmer Ripples
             for (let i = poojaDiya.oilRipples.length - 1; i >= 0; i--) {
                 const rp = poojaDiya.oilRipples[i];
@@ -3029,6 +3919,93 @@
          * 8. RENDERING COURTYARD, RANGOLI MANDALA & PHULJHARI SPARKLER
          * ============================================================================
          */
+        // Real-Time Dynamic Point-Light Emissive Pass:
+        // Illuminates courtyard ground tiles, horizon, and night sky realistically in dark rooms
+        function drawDynamicSceneLighting() {
+            ctx.save();
+            ctx.globalCompositeOperation = 'screen';
+
+            // 1. Phuljhari pointer light bubble (dynamic warm light follows touch/mouse)
+            if (pointer.active) {
+                const rad = 230;
+                const g = ctx.createRadialGradient(pointer.x, pointer.y, 4, pointer.x, pointer.y, rad);
+                g.addColorStop(0, 'rgba(255, 225, 120, 0.35)');
+                g.addColorStop(0.4, 'rgba(255, 140, 20, 0.14)');
+                g.addColorStop(1, 'rgba(255, 60, 0, 0)');
+                ctx.fillStyle = g;
+                ctx.beginPath();
+                ctx.arc(pointer.x, pointer.y, rad, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // 2. Active courtyard items: Diyas, Anaar, Chakri, Surya Chakra, Colour Fountain, Wala
+            for (const item of items) {
+                if (item.state === 'active') {
+                    if (item.type === 'diya') {
+                        const flicker = 1 + Math.sin(item.flameFlicker * 1.5) * 0.08;
+                        const r = 160 * flicker;
+                        const g = ctx.createRadialGradient(item.x + 18, item.y - 12, 2, item.x, item.y, r);
+                        g.addColorStop(0, 'rgba(255, 190, 60, 0.35)');
+                        g.addColorStop(0.45, 'rgba(255, 100, 10, 0.12)');
+                        g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                        ctx.fillStyle = g;
+                        ctx.beginPath();
+                        ctx.arc(item.x + 18, item.y - 12, r, 0, Math.PI * 2);
+                        ctx.fill();
+                    } else if (item.type === 'anaar' || item.type === 'colour_fountain') {
+                        const r = 320;
+                        const col = item.type === 'colour_fountain' && item.fountainColors ? hexToRgb(item.fountainColors[1]) : '255, 180, 50';
+                        const g = ctx.createRadialGradient(item.x, item.y - 45, 10, item.x, item.y - 45, r);
+                        g.addColorStop(0, `rgba(${col}, 0.55)`);
+                        g.addColorStop(0.4, `rgba(${col}, 0.18)`);
+                        g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                        ctx.fillStyle = g;
+                        ctx.beginPath();
+                        ctx.arc(item.x, item.y - 45, r, 0, Math.PI * 2);
+                        ctx.fill();
+                    } else if (item.type === 'chakri' || item.type === 'surya_chakra') {
+                        const r = item.type === 'surya_chakra' ? 300 : 220;
+                        const g = ctx.createRadialGradient(item.x, item.y, 4, item.x, item.y, r);
+                        g.addColorStop(0, 'rgba(255, 230, 80, 0.45)');
+                        g.addColorStop(0.5, 'rgba(255, 120, 10, 0.15)');
+                        g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                        ctx.fillStyle = g;
+                        ctx.beginPath();
+                        ctx.arc(item.x, item.y, r, 0, Math.PI * 2);
+                        ctx.fill();
+                    } else if (item.isWala() && item.lastBlastX !== undefined) {
+                        const r = 190;
+                        const g = ctx.createRadialGradient(item.lastBlastX, item.lastBlastY, 2, item.lastBlastX, item.lastBlastY, r);
+                        g.addColorStop(0, 'rgba(255, 245, 160, 0.6)');
+                        g.addColorStop(0.5, 'rgba(255, 110, 20, 0.2)');
+                        g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                        ctx.fillStyle = g;
+                        ctx.beginPath();
+                        ctx.arc(item.lastBlastX, item.lastBlastY, r, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+            }
+
+            // 3. Aerial shell explosion glow onto the sky and courtyard below
+            for (const shell of aerialShells) {
+                if (!shell.done && shell.burstType) {
+                    const rad = 360 * (shell.shellSize || 1);
+                    const col = hexToRgb(shell.color || '#FFD700');
+                    const g = ctx.createRadialGradient(shell.x, shell.y, 8, shell.x, shell.y, rad);
+                    g.addColorStop(0, `rgba(${col}, 0.38)`);
+                    g.addColorStop(0.55, `rgba(${col}, 0.10)`);
+                    g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                    ctx.fillStyle = g;
+                    ctx.beginPath();
+                    ctx.arc(shell.x, shell.y, rad, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+
+            ctx.restore();
+        }
+
         function drawBackgroundAndCourtyard(litDiyaCount) {
             // Pure Light Celebration: Room illumination grows with every lit Diya & Cracker (Zero Smoke)
             const ambientBoost = Math.min(1, (litDiyaCount * 0.12) + (sparks.length * 0.0018) + screenFlash);
@@ -3085,9 +4062,13 @@
         function drawLivePhuljhari() {
             const x = pointer.x;
             const y = pointer.y;
+            const vx = pointer.vx || 0;
+            const vy = pointer.vy || 0;
+            const speed = Math.hypot(vx, vy);
 
-            // Emit continuous live Phuljhari sparks from tip
-            for (let i = 0; i < 2; i++) {
+            // 1. Dynamic continuous sparks from tip
+            const baseCount = speed > 3 ? 4 : 2;
+            for (let i = 0; i < baseCount; i++) {
                 const ang = Math.random() * Math.PI * 2;
                 const spd = 1.2 + Math.random() * 3.8;
                 sparks.push(new Spark(
@@ -3101,8 +4082,30 @@
                     0.08
                 ));
             }
-            if (Math.random() < 0.18) {
-                audio.playSparkPop(3800, 0.015);
+
+            // 2. Trailing inertia sparks left in the wake when moving (Phuljhari Trail Effect)
+            if (speed > 1.2) {
+                const trailSparks = Math.min(5, Math.floor(speed * 0.45));
+                for (let i = 0; i < trailSparks; i++) {
+                    const frac = Math.random();
+                    const tx = x - vx * frac + (Math.random() - 0.5) * 4;
+                    const ty = y - vy * frac + (Math.random() - 0.5) * 4;
+                    const spread = (Math.random() - 0.5) * 1.8;
+                    sparks.push(new Spark(
+                        tx,
+                        ty,
+                        -vx * 0.15 + spread,
+                        -vy * 0.15 + spread + 0.5, // slight downward gravity
+                        Math.random() > 0.4 ? '#FFE082' : '#FFB703',
+                        1.2 + Math.random() * 0.8,
+                        0.085 + Math.random() * 0.04,
+                        0.06
+                    ));
+                }
+            }
+
+            if (Math.random() < 0.22) {
+                audio.playSparkPop(3600 + Math.random() * 600, 0.016);
             }
 
             ctx.save();
@@ -3116,13 +4119,14 @@
             ctx.stroke();
 
             // Glowing tip halo
-            const g = ctx.createRadialGradient(x, y, 1, x, y, 42);
+            const haloRadius = 42 + Math.min(14, speed * 1.5);
+            const g = ctx.createRadialGradient(x, y, 1, x, y, haloRadius);
             g.addColorStop(0, 'rgba(255, 250, 210, 0.95)');
             g.addColorStop(0.35, 'rgba(255, 180, 0, 0.45)');
             g.addColorStop(1, 'rgba(255, 100, 0, 0)');
             ctx.fillStyle = g;
             ctx.beginPath();
-            ctx.arc(x, y, 42, 0, Math.PI * 2);
+            ctx.arc(x, y, haloRadius, 0, Math.PI * 2);
             ctx.fill();
             ctx.restore();
         }
@@ -3144,11 +4148,31 @@
                 }
 
                 drawBackgroundAndCourtyard(litDiyas);
+                drawDynamicSceneLighting();
 
                 // Update & Render Items (Diyas & Crackers)
                 for (const item of items) {
                     item.update();
-                    item.draw(ctx);
+                    if (item.dragging) {
+                        ctx.save();
+                        ctx.globalAlpha = 0.8;
+                        item.draw(ctx);
+                        ctx.restore();
+                    } else {
+                        item.draw(ctx);
+                    }
+                }
+                if (dropPreview || (dragItem && dragMoved)) {
+                    const px = dropPreview ? dropPreview.x : dragItem.x;
+                    const py = dropPreview ? dropPreview.y : dragItem.y;
+                    ctx.save();
+                    ctx.strokeStyle = 'rgba(255, 215, 0, 0.55)';
+                    ctx.lineWidth = 2;
+                    ctx.setLineDash([6, 5]);
+                    ctx.beginPath();
+                    ctx.ellipse(px, py + 4, 30, 11, 0, 0, Math.PI * 2);
+                    ctx.stroke();
+                    ctx.restore();
                 }
             }
 
@@ -3201,6 +4225,8 @@
             try { if ('wakeLock' in navigator) await navigator.wakeLock.request('screen'); } catch (e) {}
         })();
         document.addEventListener('visibilitychange', async () => {
+            // keep sound in step with the frozen animation while the tab is hidden
+            if (audio.ctx) { try { document.hidden ? audio.ctx.suspend() : audio.ctx.resume(); } catch (e) {} }
             if (document.visibilityState === 'visible') {
                 try { if ('wakeLock' in navigator) await navigator.wakeLock.request('screen'); } catch (e) {}
             }
@@ -3213,6 +4239,60 @@
         }
         ['pointerdown', 'pointermove', 'touchstart', 'keydown'].forEach(ev => window.addEventListener(ev, wakeUI, { passive: true }));
         wakeUI();
+        // iOS only unlocks audio on touchend
+        window.addEventListener('touchend', () => audio.init(), { passive: true });
     </script>
+
+        <!-- PWA Install Banner -->
+        <div id="pwa-install-banner" class="hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-stone-900/90 border border-amber-600/50 backdrop-blur-md rounded-2xl px-4 py-2.5 shadow-2xl flex items-center gap-3 text-xs text-amber-200">
+            <svg class="w-5 h-5 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v14M12 16l4-4M12 16l-4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/>
+            </svg>
+            <span>Install Jwala Diwali for full-screen celebration</span>
+            <button id="pwa-install-btn" class="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-stone-950 font-bold px-3 py-1 rounded-lg transition-all shadow-md">Install</button>
+            <button id="pwa-dismiss-btn" class="text-stone-400 hover:text-stone-200 text-base leading-none px-1">✕</button>
+        </div>
+
+        <script>
+            // Register PWA Service Worker
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('./sw.js').then((reg) => {
+                        reg.update();
+                    }).catch(() => {});
+                });
+            }
+
+            // PWA Install prompt handling
+            let deferredPrompt = null;
+            const banner = document.getElementById('pwa-install-banner');
+            const installBtn = document.getElementById('pwa-install-btn');
+            const dismissBtn = document.getElementById('pwa-dismiss-btn');
+
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                if (!sessionStorage.getItem('pwa-dismissed')) {
+                    banner.classList.remove('hidden');
+                }
+            });
+
+            if (installBtn) {
+                installBtn.addEventListener('click', async () => {
+                    if (!deferredPrompt) return;
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    deferredPrompt = null;
+                    banner.classList.add('hidden');
+                });
+            }
+
+            if (dismissBtn) {
+                dismissBtn.addEventListener('click', () => {
+                    banner.classList.add('hidden');
+                    sessionStorage.setItem('pwa-dismissed', '1');
+                });
+            }
+        </script>
 </body>
 </html>
