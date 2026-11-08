@@ -16,6 +16,7 @@
     <link rel="icon" type="image/svg+xml" href="Animated_favicon.svg">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#b45309">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Jwala Diwali">
@@ -207,6 +208,7 @@
         .drag-ghost { position: fixed; left: 0; top: 0; z-index: 60; pointer-events: none; opacity: 0.92; will-change: transform; filter: drop-shadow(0 8px 14px rgba(0,0,0,.6)); }
         body.dragging-item, body.dragging-item * { cursor: grabbing !important; }
     </style>
+    <script src="./html2canvas.min.js"></script>
 </head>
 <body class="relative w-full h-full select-none">
 
@@ -245,8 +247,15 @@
             </button>
         </div>
 
-        <!-- Sound & Reset Controls -->
+        <!-- Sound, Screenshot & Reset Controls -->
         <div class="flex items-center gap-2 pointer-events-auto">
+            <button id="screenshotBtn" class="brass-panel p-2.5 md:p-3 rounded-2xl text-amber-300 hover:text-amber-100 active:scale-95 transition" title="Download Screenshot">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </button>
+
             <button id="soundToggleBtn" class="brass-panel p-2.5 md:p-3 rounded-2xl text-amber-300 hover:text-amber-100 active:scale-95 transition" title="Toggle Sound">
                 <svg id="soundOnIcon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
@@ -1494,8 +1503,9 @@
         // ---- Greeting bursts: sparks fly out and settle into readable words ----
         const GREETINGS = [
             { t: 'Happy Diwali',            f: '800 {px}px "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif', cols: ['#FFD700', '#FFF3B0'] },
-            { t: 'Happy Deepavali',         f: '800 {px}px "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif', cols: ['#FF9933', '#FFE082'] },
+            { t: 'शुभ दीपावली',              f: '700 {px}px "Noto Sans Devanagari", "Mangal", "Nirmala UI", sans-serif', cols: ['#FF9933', '#FFE082'] },
             { t: 'దీపావళి\nశుభాకాంక్షలు',      f: '700 {px}px "JwalaTelugu", "Noto Sans Telugu", "Nirmala UI", "Gautami", sans-serif', cols: ['#FFB703', '#FFF3B0'] },
+            { t: 'Happy Deepavali',         f: '800 {px}px "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif', cols: ['#FF9933', '#FFE082'] },
             { t: 'శుభ దీపావళి',               f: '700 {px}px "JwalaTelugu", "Noto Sans Telugu", "Nirmala UI", "Gautami", sans-serif', cols: ['#FF9933', '#FFD700'] }
         ];
 
@@ -3528,6 +3538,106 @@
                 populateDefaultCourtyard();
             }
         });
+
+        // High-Resolution Screenshot (Full Screen with All Elements)
+        const screenshotBtn = document.getElementById('screenshotBtn');
+        if (screenshotBtn) {
+            screenshotBtn.addEventListener('click', async () => {
+                audio.init();
+                wakeUI();
+
+                // Temporarily hide the tutorial hint pill so it NEVER appears in the screenshot
+                const pill = document.getElementById('tutorialPill');
+                const prevDisplay = pill ? pill.style.display : '';
+                if (pill) pill.style.display = 'none';
+
+                try {
+                    let captured = null;
+                    if (typeof html2canvas === 'function') {
+                        try {
+                            captured = await html2canvas(document.body, {
+                                useCORS: true,
+                                allowTaint: true,
+                                backgroundColor: '#040203',
+                                scale: Math.max(window.devicePixelRatio || 1, 2),
+                                ignoreElements: (el) => {
+                                    if (!el) return false;
+                                    const id = (el.id || '').toLowerCase();
+                                    const cls = (typeof el.className === 'string' ? el.className : '').toLowerCase();
+                                    return id.includes('extension') || id.includes('driver') || id.includes('share-modal') ||
+                                           cls.includes('extension') || cls.includes('driver') || cls.includes('share-modal');
+                                },
+                                onclone: (clonedDoc) => {
+                                    // 1. Ensure tutorial pill is completely removed from clone
+                                    const p = clonedDoc.getElementById('tutorialPill');
+                                    if (p) p.remove();
+
+                                    // 2. Preserve pitch-black body background
+                                    clonedDoc.body.style.backgroundColor = '#040203';
+
+                                    // 3. Render brass panels with crisp dark brass glassmorphism
+                                    const panels = clonedDoc.querySelectorAll('.brass-panel');
+                                    panels.forEach(el => {
+                                        el.style.backgroundColor = 'rgba(12, 7, 3, 0.90)';
+                                        el.style.backgroundImage = 'linear-gradient(135deg, rgba(28, 16, 7, 0.92), rgba(12, 7, 3, 0.95))';
+                                        el.style.borderColor = 'rgba(245, 158, 11, 0.45)';
+                                        el.style.boxShadow = '0 6px 24px rgba(0, 0, 0, 0.9)';
+                                        el.style.backdropFilter = 'none';
+                                    });
+
+                                    // 4. Ensure dock mask is clean
+                                    const dock = clonedDoc.getElementById('dockScroll');
+                                    if (dock) {
+                                        dock.style.webkitMaskImage = 'none';
+                                        dock.style.maskImage = 'none';
+                                    }
+                                }
+                            });
+                        } catch (h2cErr) {
+                            console.warn('html2canvas DOM capture fallback to canvas:', h2cErr);
+                            captured = canvas;
+                        }
+                    } else {
+                        captured = canvas;
+                    }
+
+                    // Restore tutorial pill visibility on the live page
+                    if (pill) pill.style.display = prevDisplay;
+
+                    // Camera shutter flash and chime
+                    setFlashColor('#FFFFFF');
+                    screenFlash = 0.35;
+                    if (audio.playDiyaLit) audio.playDiyaLit();
+
+                    captured.toBlob((blob) => {
+                        if (!blob) {
+                            setTutorialHint('Screenshot capture failed');
+                            setTimeout(() => updateTutorialContext(), 2500);
+                            return;
+                        }
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        const now = new Date();
+                        const pad = (n) => String(n).padStart(2, '0');
+                        const ts = `${now.getFullYear()}${pad(now.getMonth() + 1)}${pad(now.getDate())}_${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
+                        a.download = `jwala-diwali-${ts}.png`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        setTimeout(() => URL.revokeObjectURL(url), 2000);
+
+                        setTutorialHint('High-resolution screenshot saved');
+                        setTimeout(() => updateTutorialContext(), 3000);
+                    }, 'image/png');
+                } catch (err) {
+                    if (pill) pill.style.display = prevDisplay;
+                    console.error('Screenshot error:', err);
+                    setTutorialHint('Screenshot capture failed');
+                    setTimeout(() => updateTutorialContext(), 2500);
+                }
+            });
+        }
 
         /**
          * ============================================================================

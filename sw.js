@@ -1,7 +1,8 @@
-const CACHE_NAME = 'jwala-diwali-v2.3';
+const CACHE_NAME = 'jwala-diwali-v2.4';
 const ASSETS = [
   './',
   './index.html',
+  './html2canvas.min.js',
   './manifest.json',
   './favicon.svg',
   './Animated_favicon.svg',
